@@ -17,18 +17,14 @@ app.use('/info', infoRouter);
 app.use('/reservation', reservationRouter);
 
 
-app.get("/", (req, res) => {
-    res.send("Main page")
-})
-
 //functions
 async function executeSQL(sql, params){
     return new Promise (function (resolve, reject) {
-    pool.query(sql, params, function (err, rows, fields) {
-    if (err) throw err;
-       resolve(rows);
-    });
-    });
+        pool.query(sql, params, function (err, rows, fields) {
+            if (err) throw err;
+               resolve(rows);
+            });
+        });
     }//executeSQL
     
     
@@ -46,5 +42,9 @@ function dbConnection(){
     return pool;
 
 } //dbConnection
+
+app.listen(3000, () => {
+    console.log("Server up")
+})
 
 
