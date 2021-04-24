@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js && npm run open",
+    "start": "node index && npm run open",
     "open": "concurrently \"http-server -a localhost -p 3000\" \"open http://localhost:3000\""
   },
   "keywords": [],
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "concurrently": "^6.0.2",
-    "http-server": "^0.12.3"
+    "http-server": "^0.12.3",
+    "sleep-ms": "^2.0.1"
   }
 }
