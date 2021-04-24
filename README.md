@@ -6,4 +6,4 @@ run these in your npm directory:
 <br>
   npm install http-server --save-dev
 <br>
-  npm install http-server --save-dev
+  npm install concurrently --save-dev
