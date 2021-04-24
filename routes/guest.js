@@ -1,7 +1,7 @@
-const routes = require('express').Router();
+const router = require('express').Router();
 
-routes.get('/', (req, res) => {
+router.get('/', (req, res) => {
     res.send("From guest.js");
 });
 
-module.exports = routes;
+module.exports = router;
