@@ -6,8 +6,8 @@ router.get('/', (req, res) => {
 });
 
 router.get('/roomTypes', async (req, res) => {
-    let sql = 'SELECT * FROM Rooms'
-    let rooms = await db.executeSQL(sql);
+    // let sql = 'SELECT * FROM Rooms'
+    // let rooms = await db.executeSQL(sql);
     res.render("roomTypes.ejs", {"rooms": rooms})
 })
 
