@@ -1,16 +1,16 @@
 const router = require('express').Router();
 
-router.get('/', (req, res) => {
-    res.send("From reservation.js");
-});
+// router.get('/', (req, res) => {
+//     res.send("From reservation.js");
+// });
 
 //Reservation GET Route: load reservations page
-app.get("/reservation", async function(req, res){
+router.get("/", async function(req, res){
     res.render("reservation");
 });
 
 // Reservation POST Route: get form data and insert into DB
-app.post("/reservation", async function(req, res){
+router.post("/", async function(req, res){
     let fName = req.body.firstName
     let lName = req.body.lastName
     let inDate = req.body.inDate
