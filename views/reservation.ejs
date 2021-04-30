@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+
+<h1>Reservations</h1>
+
+<%-include ('partials/nav.ejs')%>
+
+To make a reservation, please fill in the information below, then click "Make Reservation".
+<br>
+
+<form method="POST" action="/reservation">
+    First Name:
+    <input type="text" name="firstName"><br>
+    Last Name:
+    <input type="text" name="lastName"><br>
+    Credit Card:
+    <input type="text" name="creditCard"><br>
+    Check-In Date:
+    <input type="date" max="01/01/2022"
+           required pattern="\d{4}-\d{2}-\d{2}"
+           placeholder="YYYY-MM-DD"
+           name="inDate" ><br>
+    Check-Out Date:
+    <input type="date" max="01/01/2022"
+           required pattern="\d{4}-\d{2}-\d{2}"
+           placeholder="YYYY-MM-DD"
+           name="outDate"><br>
+    Room Type:
+    <input type="radio" name="type" value="oneBed"> 1 Bedroom
+    <input type="radio" name="type" value="twoBed"> 2 Bedroom
+    <input type="radio" name="type" value="twoBed"> Villa
+    <br>
+    <button> Make Reservation </button>
+</form>
+
+<% if (typeof message != "undefined"){ %>
+<h3><%=message%></h3>
+<% } %>
+
+</body>
+</html>
