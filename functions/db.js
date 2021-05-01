@@ -1,7 +1,6 @@
 const mysql = require('mysql');
 const pool = dbConnection();
 
-//functions
 async function executeSQL(sql, params){
     return new Promise (function (resolve, reject) {
         pool.query(sql, params, function (err, rows, fields) {
@@ -9,7 +8,7 @@ async function executeSQL(sql, params){
             resolve(rows);
         });
     });
-}//executeSQL
+}
 
 function dbConnection(){
     const pool  = mysql.createPool({
@@ -21,6 +20,6 @@ function dbConnection(){
 
     });
     return pool;
-} //dbConnection
+}
 
 module.exports = {executeSQL, dbConnection};

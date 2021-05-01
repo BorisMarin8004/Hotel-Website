@@ -26,7 +26,7 @@ router.post('/login', async (req, res) => {
     }
     
 
-    if (password == rows[0].password){
+    if (password === rows[0].password){
         res.send("success");
     } else {
         res.render("login", {"error":error});
