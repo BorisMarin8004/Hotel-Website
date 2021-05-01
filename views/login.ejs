@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+
+    Login:
+    <form action="/guest/login" method="POST">
+
+        Username:
+        <input type="text" name="username"><br>
+
+        Password:
+        <input type="password" name="password"><br>
+
+        <button>Login</button>
+
+    </form>
+
+
+    Create an Account:
+    <form action ="/guest/create" method="POST">
+
+        First Name:
+        <input type="text" name="fName"><br>
+        
+        Last Name:
+        <input type="text" name="lName"><br>
+        
+        Username:
+        <input type="text" name="username"><br>
+
+        Password:
+        <input type="password" name="password"><br>
+
+        <button>Create</button>
+
+    </form>
+
+    <% if (typeof error != "undefined") { %>
+    <%= error %>
+    <% } %>
+
+
+</body>
+</html>
