@@ -6,6 +6,14 @@ app.set("view engine", "ejs")
 app.use(express.static("public"))
 app.use(express.urlencoded({extended: true}));
 
+app.set('trust proxy', 1) // trust first proxy
+app.use(session({
+    secret: 'topsecret',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: true }
+}));
+
 // Routers
 const guestRouter = require('./routes/guest.js');
 const infoRouter = require('./routes/info.js');

@@ -1,5 +1,5 @@
 const router = require('express').Router();
-
+const db = require("../functions/db")
 // router.get('/', (req, res) => {
 //     res.send("From reservation.js");
 // });
@@ -17,10 +17,10 @@ router.post("/makeReservation", async function(req, res){
     let outDate = req.body.outDate
     let roomType = req.body.type
     // Insert info into reservation db
-    // let sql = "INSERT INTO q_authors (firstName, lastName, dob, dod, sex, profession, country, portrait, biography) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);"
-    let params = [fName, lName, inDate, outDate, roomType];
-    //let rows = await executeSQL(sql, params);
-    res.render("makeReservation", {"message": "Reservation made!"});
+    // let sql = "INSERT INTO q_authors (startDate, endDate) VALUES (?, ?);"
+    // let params = [inDate, outDate];
+    // let rows = await db.executeSQL(sql, params);
+    res.render("makeReservation", {"message": "Reservation made!(Not actually)"});
 });
 
 module.exports = router;

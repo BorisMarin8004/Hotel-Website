@@ -47,7 +47,7 @@ router.post('/create', async (req, res) => {
     } else{
         let sqlCheck = "SELECT guestId FROM guests WHERE username=?";
         let rows = await db.executeSQL(sqlCheck, [username]);
-        if (rows.length != 0){
+        if (rows.length !== 0){
             res.render("login", {"error":`ERROR: The username ${username} is already taken!`});
         } else{
             let rows = await db.executeSQL(sql, params);
