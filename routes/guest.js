@@ -41,12 +41,26 @@ router.post('/create', async (req, res) => {
 
     let sql = "INSERT INTO guests (firstName, lastName, username, password) VALUES (?, ?, ?, ?)";
     let params = [fName, lName, username, password];
-    let rows = await db.executeSQL(sql, params);
 
-    // TODO: Sanitize input + check for existing username (in hindsight username probably could be the primary key of the table?)
+    if (fName.length <= 0 || lName.length <= 0 || username.length <= 0 || password.length <= 0){
+        res.render("login", {"error":"ERROR: All fields must be filled!"});
+    } else{
+        let sqlCheck = "SELECT guestId FROM guests WHERE username=?";
+        let rows = await db.executeSQL(sqlCheck, [username]);
+        if (rows.length != 0){
+            res.render("login", {"error":`ERROR: The username ${username} is already taken!`});
+        } else{
+            let rows = await db.executeSQL(sql, params);
+            res.render("login", {"error":`Account ${username} created successfully!`});
+        }
+        
+    }
+    
 
 
-    res.render("login", {"error":`Account ${username} created successfully!`});
+
+
+    
 });
 
 module.exports = router;
