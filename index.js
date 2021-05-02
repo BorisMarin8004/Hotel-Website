@@ -15,7 +15,7 @@ app.use('/info', infoRouter);
 app.use('/reservation', reservationRouter);
 
 app.get('/', (req, res) => {
-    res.send("Root page")
+    res.redirect("/info/")
 })
 
 app.listen(3000, () => {
