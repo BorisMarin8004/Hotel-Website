@@ -6,11 +6,11 @@ const router = require('express').Router();
 
 //Reservation GET Route: load reservations page
 router.get("/", async function(req, res){
-    res.render("reservation");
+    res.render("makeReservation");
 });
 
 // Reservation POST Route: get form data and insert into DB
-router.post("/", async function(req, res){
+router.post("/makeReservation", async function(req, res){
     let fName = req.body.firstName
     let lName = req.body.lastName
     let inDate = req.body.inDate
@@ -20,7 +20,7 @@ router.post("/", async function(req, res){
     // let sql = "INSERT INTO q_authors (firstName, lastName, dob, dod, sex, profession, country, portrait, biography) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);"
     let params = [fName, lName, inDate, outDate, roomType];
     //let rows = await executeSQL(sql, params);
-    res.render("reservation", {"message": "Reservation made!"});
+    res.render("makeReservation", {"message": "Reservation made!"});
 });
 
 module.exports = router;
