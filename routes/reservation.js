@@ -10,7 +10,7 @@ router.get("/", async function(req, res){
 });
 
 // Reservation POST Route: get form data and insert into DB
-router.post("/", async function(req, res){
+router.post("/makeReservation", async function(req, res){
     let fName = req.body.firstName
     let lName = req.body.lastName
     let inDate = req.body.inDate

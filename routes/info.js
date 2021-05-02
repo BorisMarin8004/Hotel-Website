@@ -1,8 +1,8 @@
 const db = require("../functions/db")
-const router = require('express').Router();
+const router = require('express').Router()
 
 router.get('/', (req, res) => {
-    res.render("index");
+    res.render("index")
 });
 
 router.get('/roomTypes', async (req, res) => {
@@ -11,4 +11,4 @@ router.get('/roomTypes', async (req, res) => {
     res.render("roomTypes", {"rooms": rooms})
 })
 
-module.exports = router;
+module.exports = router
