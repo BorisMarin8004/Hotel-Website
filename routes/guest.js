@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
 
 router.get('/login', (req, res) => {
     console.log(req.route.path)
+    req.session.authenticated = false
     res.render("login");
 });
 

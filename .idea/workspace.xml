@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f33c4aab-b6a8-4387-83e2-67835b24b2f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/functions/appConfig.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/appConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/appConfig.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/guest.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/guest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +78,8 @@
       <option name="presentableId" value="Default" />
       <updated>1619913602129</updated>
       <workItem from="1619913603386" duration="116000" />
-      <workItem from="1619913777512" duration="9527000" />
+      <workItem from="1619913777512" duration="10176000" />
+      <workItem from="1620020449597" duration="1123000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed Images in room types and redirect root">
       <created>1619915816609</created>
@@ -97,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619917412548</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finished sessions and middleware">
+      <created>1619982554033</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619982554033</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed Images in room types and redirect root" />
     <MESSAGE value="Started sessions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started sessions" />
+    <MESSAGE value="Finished sessions and middleware" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished sessions and middleware" />
   </component>
 </project>

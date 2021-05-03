@@ -17,6 +17,7 @@ app.use(cookieSession({
     // store: new redisStore({ host: 'localhost', port: 6379, client: client, ttl : 260}),
     saveUninitialized: false,
     resave: false,
+    expires: new Date(Date.now() + (30 * 1000)),
     authenticated: false
 }));
 
