@@ -12,13 +12,13 @@ app.use(cookieSession({
     secret: 'secret',
     saveUninitialized: false,
     resave: false,
-    expires: new Date(Date.now() + (30 * 3000)),
+    expire: new Date(Date.now() + (30 * 100)),
     guestId: null,
     authenticated: false
 }));
 
 app.use((req, res, next) => {
-    console.log({"Session": req.session, "Path" : req.path})
+    console.log({"Session": req.session, "Path" : req.path, "Reg" : req.session.regenerate})
     if(!req.session.authenticated && req.path !== "/guest/login"){
         res.redirect("/guest/login")
     }else{

@@ -2,10 +2,6 @@ const router = require('express').Router();
 const bcrypt = require('bcrypt');
 const db = require("../functions/db")
 
-// router.use((req, res, next) => {
-//     console.log({"LogIn" : req.session})
-// })
-
 router.get('/', (req, res) => {
     res.send("From guest.js");
 });
@@ -13,6 +9,7 @@ router.get('/', (req, res) => {
 router.get('/login', (req, res) => {
     console.log(req.route.path)
     req.session.authenticated = false
+    req.session.guestId = null
     res.render("login");
 });
 
