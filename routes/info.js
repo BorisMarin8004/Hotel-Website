@@ -1,5 +1,4 @@
 const db = require("../functions/db")
-const appConfig = require("../functions/appConfig")
 const router = require('express').Router()
 
 router.get('/', (req, res) => {

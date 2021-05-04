@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/appConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/appConfig.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/guest.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/guest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/info.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +79,9 @@
       <updated>1619913602129</updated>
       <workItem from="1619913603386" duration="116000" />
       <workItem from="1619913777512" duration="10176000" />
-      <workItem from="1620020449597" duration="1123000" />
+      <workItem from="1620020449597" duration="1695000" />
+      <workItem from="1620088519906" duration="1432000" />
+      <workItem from="1620103830917" duration="348000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed Images in room types and redirect root">
       <created>1619915816609</created>
@@ -102,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619982554033</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added timeout to session">
+      <created>1620021619531</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620021619531</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +133,7 @@
     <MESSAGE value="Fixed Images in room types and redirect root" />
     <MESSAGE value="Started sessions" />
     <MESSAGE value="Finished sessions and middleware" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished sessions and middleware" />
+    <MESSAGE value="Added timeout to session" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added timeout to session" />
   </component>
 </project>

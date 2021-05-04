@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const appConfig = require('../functions/appConfig');
 const bcrypt = require('bcrypt');
 const db = require("../functions/db")
 
@@ -40,7 +39,12 @@ router.post('/login', async (req, res) => {
 
     if (password === hash){
         // appConfig.setAuth(req, true)
+        let sql = "SELECT guestId FROM guests WHERE password = ?";
+        let params = [password];
+        let data = await db.executeSQL(sql, params);
+
         req.session.authenticated = true
+        req.session.guestId = data[0]["guestId"]
         console.log({"LogIn": req.session})
         res.render("index");
     } else {

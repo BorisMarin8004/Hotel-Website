@@ -1,8 +1,4 @@
 const express = require("express")
-const session = require('express-session');
-// const redis = require('redis');
-// const redisStore = require('connect-redis')(session);
-// const client  = redis.createClient();
 const cookieSession = require('cookie-session');
 
 //Setup
@@ -14,10 +10,10 @@ app.set('trust proxy', 1)
 app.use(cookieSession({
     name: 'session',
     secret: 'secret',
-    // store: new redisStore({ host: 'localhost', port: 6379, client: client, ttl : 260}),
     saveUninitialized: false,
     resave: false,
-    expires: new Date(Date.now() + (30 * 1000)),
+    expires: new Date(Date.now() + (30 * 3000)),
+    guestId: null,
     authenticated: false
 }));
 
@@ -30,9 +26,4 @@ app.use((req, res, next) => {
     }
 })
 
-function setAuth(req, boolToggle){
-    req.session.authenticated = boolToggle;
-    console.log({"setAuth": req.session})
-}
-
-module.exports = {app, setAuth}
+module.exports = {app}
