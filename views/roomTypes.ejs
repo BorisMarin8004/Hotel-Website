@@ -1,25 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<%-include ('partials/header.ejs')%>
+
     <title>Room Types</title>
 </head>
 <body>
 
+<h1>Available Rooms We Offer:</h1>
+
+<div id = "roomTypesSection">
+
     <%-include ('partials/nav.ejs')%>
 
-    <h1 class="pageTitle">Available Rooms We Offer:</h1>
+    <div id = "roomTypesCenterSection">
     <% for (room of rooms) { %>
-        <div class="roomInfo">
+            <div class = "roomInfoAndImage">
+            <div>
             Room Number: <%=room.roomId%>
             Type: <%=room.type%>
             Price: <%=room.price%>
             Description: <%=room.description%>
-            Image: <img class="roomImage" src="/images/<%=room.image%>">
-        </div>
-
+            </div>
+            <img class="roomImage" src="/images/<%=room.image%>">
+            </div>
+            <br>
     <% } %>
-
+    </div>
+</div>
     <%-include ('partials/footer.ejs')%>
 
 </body>

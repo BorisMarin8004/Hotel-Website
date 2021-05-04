@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f33c4aab-b6a8-4387-83e2-67835b24b2f0" name="Default Changelist" comment="" />
+    <list default="true" id="67ced2b1-6d84-4be8-9e89-fcb5fcea14cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/initial.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/contact.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/contact.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/events.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/events.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/makeReservation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/makeReservation.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/profile.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/profile.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/roomTypes.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/roomTypes.ejs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1rxN60NvcQC2hmhX5zpm9TUNdia" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,6 +65,10 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.open" />
+      <item itemvalue="npm.start" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
@@ -73,10 +85,8 @@
       <option name="presentableId" value="Default" />
       <updated>1619913602129</updated>
       <workItem from="1619913603386" duration="116000" />
-      <workItem from="1619913777512" duration="10176000" />
-      <workItem from="1620020449597" duration="1695000" />
-      <workItem from="1620088519906" duration="1432000" />
-      <workItem from="1620103830917" duration="3065000" />
+      <workItem from="1619913777512" duration="2840000" />
+      <workItem from="1620152104616" duration="230000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed Images in room types and redirect root">
       <created>1619915816609</created>
@@ -85,19 +95,19 @@
       <option name="project" value="LOCAL" />
       <updated>1619915816609</updated>
     </task>
-    <task id="LOCAL-00002" summary="Started sessions">
-      <created>1619917412548</created>
+    <task id="LOCAL-00002" summary="Added reservation.ejs and reservation routes">
+      <created>1620110902020</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1619917412548</updated>
+      <updated>1620110902020</updated>
     </task>
-    <task id="LOCAL-00003" summary="Finished sessions and middleware">
-      <created>1619982554033</created>
+    <task id="LOCAL-00003" summary="Added reservation.ejs and reservation routes">
+      <created>1620152308867</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1619982554033</updated>
+      <updated>1620152308867</updated>
     </task>
     <task id="LOCAL-00004" summary="Added timeout to session">
       <created>1620021619531</created>
@@ -148,11 +158,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed Images in room types and redirect root" />
     <MESSAGE value="Started sessions" />
-    <MESSAGE value="Finished sessions and middleware" />
-    <MESSAGE value="Added timeout to session" />
-    <MESSAGE value="Added guestId to session and fixes session" />
-    <MESSAGE value="Added client js folder" />
-    <MESSAGE value="Minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor changes" />
+    <MESSAGE value="Added reservation.ejs and reservation routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added reservation.ejs and reservation routes" />
   </component>
 </project>

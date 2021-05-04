@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<%-include ('partials/header.ejs')%>
+
   <title>Login</title>
 </head>
 <body>
-
+    <h3>Welcome to the Shoreline Resort</h3>
+    <div id = "loginSection">
     Login:
     <form action="/guest/login" method="POST">
 
@@ -43,7 +41,7 @@
     <% if (typeof error != "undefined") { %>
     <%= error %>
     <% } %>
-
+    </div>
 
 </body>
 </html>
