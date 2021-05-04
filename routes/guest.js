@@ -1,11 +1,19 @@
 const router = require('express').Router();
+const appConfig = require('../functions/appConfig');
+const bcrypt = require('bcrypt');
 const db = require("../functions/db")
+
+// router.use((req, res, next) => {
+//     console.log({"LogIn" : req.session})
+// })
 
 router.get('/', (req, res) => {
     res.send("From guest.js");
 });
 
 router.get('/login', (req, res) => {
+    console.log(req.route.path)
+    req.session.authenticated = false
     res.render("login");
 });
 
@@ -13,6 +21,7 @@ router.post('/login', async (req, res) => {
     let username = req.body.username;
     let password = req.body.password;
 
+    let hash = "";
     let error = "ERROR: Incorrect password";
 
     let sql = "SELECT * FROM guests WHERE username = ?";
@@ -21,13 +30,19 @@ router.post('/login', async (req, res) => {
 
     console.log(rows);
 
-    if (rows.length <= 0){
+    if (rows.length > 0){
+       hash = rows[0].password;
+    } else {
         error = "ERROR: Username not found";
     }
-    
 
-    if (password === rows[0].password){
-        res.send("success");
+    // let match = await bcrypt.compare(password, hash);
+
+    if (password === hash){
+        // appConfig.setAuth(req, true)
+        req.session.authenticated = true
+        console.log({"LogIn": req.session})
+        res.render("index");
     } else {
         res.render("login", {"error":error});
     }
@@ -55,12 +70,6 @@ router.post('/create', async (req, res) => {
         }
         
     }
-    
-
-
-
-
-    
 });
 
 module.exports = router;

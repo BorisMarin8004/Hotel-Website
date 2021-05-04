@@ -1,0 +1,42 @@
+#loginSection{
+    text-align: center;
+}
+
+nav{
+    text-align: left;
+    padding: 20px 50px;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+input, button{
+    margin: 10px;
+}
+
+#homeSection, #reservationSection, #roomTypesSection{
+    display: flex;
+    justify-content: center;
+}
+
+#homeCenterSection, #reservationCenterSection, #roomTypesCenterSection{
+    text-align:center;
+    padding: 20px 50px;
+}
+
+.roomInfoAndImage{
+    display: flex;
+    justify-content: center;
+}
+
+.roomImage{
+    width: 200px;
+    heght: 200px;
+}
+
+
+footer{
+    text-align:center;
+    padding: 20px 50px;
+}

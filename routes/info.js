@@ -1,7 +1,10 @@
 const db = require("../functions/db")
+const appConfig = require("../functions/appConfig")
 const router = require('express').Router()
 
 router.get('/', (req, res) => {
+    console.log(req.route.path)
+    console.log({"infoRoot": req.session})
     res.render("index")
 });
 

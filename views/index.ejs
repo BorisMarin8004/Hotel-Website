@@ -1,15 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<%-include ('partials/header.ejs')%>
+
     <title>Home Page</title>
 </head>
 <body>
 
-<%-include ('partials/nav.ejs')%>
+<div id = "homeSection">
 
-<h1 class="siteTitle">SHORLINE RESORT</h1>
-<h4 class="lowerTitle">Escape to the Sea!</h4>
+    <%-include ('partials/nav.ejs')%>
+
+    <div id = "homeCenterSection">
+        <h1 class="siteTitle">SHORLINE RESORT</h1><br>
+        <h4 class="lowerTitle">Escape to the Sea!</h4>
+    </div>
+
+</div>
 
 <%-include ('partials/footer.ejs')%> <!--footer.ejs Was nav.ejs-->
 

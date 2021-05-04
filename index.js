@@ -1,18 +1,6 @@
-const express = require("express")
+const appConfig = require("./functions/appConfig")
 
-//Setup
-const app = express()
-app.set("view engine", "ejs")
-app.use(express.static("public"))
-app.use(express.urlencoded({extended: true}));
-
-app.set('trust proxy', 1) // trust first proxy
-app.use(session({
-    secret: 'topsecret',
-    resave: false,
-    saveUninitialized: true,
-    cookie: { secure: true }
-}));
+let app = appConfig.app
 
 // Routers
 const guestRouter = require('./routes/guest.js');
@@ -29,5 +17,3 @@ app.get('/', (req, res) => {
 app.listen(3000, () => {
     console.log("Server up")
 })
-
-
