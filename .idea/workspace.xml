@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f33c4aab-b6a8-4387-83e2-67835b24b2f0" name="Default Changelist" comment="">
+    <list default="true" id="f33c4aab-b6a8-4387-83e2-67835b24b2f0" name="Default Changelist" comment="Added reservation.ejs and reservation routes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/guest.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/guest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/reservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reservation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/makeReservation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/makeReservation.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +13,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1rxN60NvcQC2hmhX5zpm9TUNdia" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,6 +53,10 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.open" />
+      <item itemvalue="npm.start" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
