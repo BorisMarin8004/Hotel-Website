@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67ced2b1-6d84-4be8-9e89-fcb5fcea14cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/appConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/appConfig.js" afterDir="false" />
-    </list>
+    <list default="true" id="67ced2b1-6d84-4be8-9e89-fcb5fcea14cb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +73,7 @@
       <workItem from="1619913603386" duration="116000" />
       <workItem from="1619913777512" duration="2840000" />
       <workItem from="1620152104616" duration="230000" />
-      <workItem from="1620154859188" duration="834000" />
+      <workItem from="1620154859188" duration="1063000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed Images in room types and redirect root">
       <created>1619915816609</created>
