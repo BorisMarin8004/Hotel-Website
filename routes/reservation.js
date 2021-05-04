@@ -1,8 +1,5 @@
 const router = require('express').Router();
 const db = require("../functions/db")
-// router.get('/', (req, res) => {
-//     res.send("From reservation.js");
-// });
 
 //Reservation GET Route: load reservations page
 router.get("/", async function(req, res){
