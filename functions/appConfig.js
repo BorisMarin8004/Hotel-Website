@@ -17,6 +17,9 @@ app.use(cookieSession({
     authenticated: false
 }));
 
+const adminUsername = "admin"
+const adminPassword = "admin"
+
 app.use((req, res, next) => {
     console.log({"Session": req.session, "Path" : req.path, "Reg" : req.session.regenerate})
     if(!req.session.authenticated && req.path !== "/guest/login" && req.path !== "/guest/create"){
@@ -26,4 +29,4 @@ app.use((req, res, next) => {
     }
 })
 
-module.exports = {app}
+module.exports = {app, adminUsername, adminPassword}
