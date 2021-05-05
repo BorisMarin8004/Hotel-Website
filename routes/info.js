@@ -24,4 +24,8 @@ router.get('/events', async (req, res) => {
     res.render("events", {"events": events})
 })
 
+router.get('/diningAndAmenities', (req, res) => {
+    res.render('diningAndAmenities')
+})
+
 module.exports = router
