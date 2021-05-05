@@ -13,11 +13,14 @@ router.get('/login', (req, res) => {
     res.render("login");
 });
 
+router.get('/update', (req, res) => {
+    res.render("profile");
+});
+
 router.post('/login', async (req, res) => {
     let username = req.body.username;
     let password = req.body.password;
 
-    let hash = "";
     let error = "ERROR: Incorrect password";
 
     let sql = "SELECT * FROM guests WHERE username = ?";
@@ -27,14 +30,7 @@ router.post('/login', async (req, res) => {
     console.log(rows);
 
     if (rows.length > 0){
-       hash = rows[0].password;
-    } else {
-        error = "ERROR: Username not found";
-    }
-
-    // let match = await bcrypt.compare(password, hash);
-
-    if (password === hash){
+       if (password === rows[0].password){
         // appConfig.setAuth(req, true)
         let sql = "SELECT guestId FROM guests WHERE password = ?";
         let params = [password];
@@ -44,9 +40,15 @@ router.post('/login', async (req, res) => {
         req.session.guestId = data[0]["guestId"]
         console.log({"LogIn": req.session})
         res.render("index");
+        } else {
+            res.render("login", {"error":error});
+        }
     } else {
+        error = "ERROR: Username not found";
         res.render("login", {"error":error});
     }
+
+    
 });
 
 router.post('/create', async (req, res) => {

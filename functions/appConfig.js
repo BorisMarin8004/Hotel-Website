@@ -19,7 +19,7 @@ app.use(cookieSession({
 
 app.use((req, res, next) => {
     console.log({"Session": req.session, "Path" : req.path, "Reg" : req.session.regenerate})
-    if(!req.session.authenticated && req.path !== "/guest/login"){
+    if(!req.session.authenticated && req.path !== "/guest/login" && req.path !== "/guest/create"){
         res.redirect("/guest/login")
     }else{
         next();
