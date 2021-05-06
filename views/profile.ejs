@@ -8,15 +8,11 @@
 
 <%-include ('partials/nav.ejs')%>
 
-<form method="POST" action="/user/update">
+<form method="POST" action="/guest/update">
     First Name:
         <input type="text" name="firstName" value="<%=user.firstName%>"><br>
     Last Name:
         <input type="text" name="lastName" value="<%=user.lastName%>"><br>
-    Username:
-        <input type="text" name="username" value="<%=user.username%>"><br>
-    Password:
-        <input type="text" name="password"><br>
     Credit Card Info:
         <input type="text" name="cardInfo" value="<%=user.cardInfo%>"><br>
     <input type="hidden" name="guestId" value="<%=user.guestId%>">
