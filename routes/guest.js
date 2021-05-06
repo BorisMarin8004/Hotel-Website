@@ -22,7 +22,6 @@ router.post('/login', async (req, res) => {
     let username = req.body.username;
     let password = req.body.password;
 
-
     if (username === appConfig.adminUsername && password === appConfig.adminPassword){
         req.session.authenticated = true
         res.render("admin")
@@ -38,7 +37,6 @@ router.post('/login', async (req, res) => {
 
     if (rows.length > 0){
        if (password === rows[0].password){
-
         // appConfig.setAuth(req, true)
         let sql = "SELECT guestId FROM guests WHERE password = ?";
         let params = [password];
