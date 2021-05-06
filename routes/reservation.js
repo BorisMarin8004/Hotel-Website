@@ -14,7 +14,7 @@ router.post("/makeReservation", async function(req, res){
     let outDate = req.body.outDate
     let roomType = req.body.type
     // Insert info into reservation db
-    // let sql = "INSERT INTO q_authors (startDate, endDate) VALUES (?, ?);"
+    // let sql = "INSERT INTO reservations (startDate, endDate) VALUES (?, ?);"
     // let params = [inDate, outDate];
     // let rows = await db.executeSQL(sql, params);
     res.render("makeReservation", {"message": "Reservation made!(Not actually)"});
