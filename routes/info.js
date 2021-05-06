@@ -24,4 +24,12 @@ router.get('/events', async (req, res) => {
     res.render("events", {"events": events})
 })
 
+router.get('/diningAndAmenities', (req, res) => {
+    res.render('diningAndAmenities')
+})
+
+router.get('/specialDeals', (req, res) => {
+    res.render('specialDeals')
+})
+
 module.exports = router

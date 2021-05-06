@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67ced2b1-6d84-4be8-9e89-fcb5fcea14cb" name="Default Changelist" comment="CSS styles added" />
+    <list default="true" id="67ced2b1-6d84-4be8-9e89-fcb5fcea14cb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,14 +139,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620106337321</updated>
     </task>
-    <task id="LOCAL-00008" summary="CSS styles added">
-      <created>1620265812204</created>
+    <task id="LOCAL-00008" summary="Added tables in admin page">
+      <created>1620264344355</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1620265812204</updated>
+      <updated>1620264344355</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Changes reservations">
+      <created>1620265938620</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1620265938620</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +176,8 @@
     <MESSAGE value="Started sessions" />
     <MESSAGE value="Added reservation.ejs and reservation routes" />
     <MESSAGE value="Added admin page" />
-    <MESSAGE value="CSS styles added" />
-    <option name="LAST_COMMIT_MESSAGE" value="CSS styles added" />
+    <MESSAGE value="Added tables in admin page" />
+    <MESSAGE value="Changes reservations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes reservations" />
   </component>
 </project>

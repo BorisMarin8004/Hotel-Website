@@ -83,6 +83,9 @@ input, button{
     heght: 200px;
 }
 
+#diningImage, #poolImage{
+    width: 400px;
+}
 
 footer{
     text-align:center;
