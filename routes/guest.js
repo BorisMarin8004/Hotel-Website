@@ -14,6 +14,14 @@ router.get('/login', (req, res) => {
     res.render("login");
 });
 
+router.get('/update', async (req, res) => {
+    let guestId = req.session.guestId;
+    let sql = `SELECT guestId, firstName, lastName, cardInfo FROM guests where guestId=${guestId}`;
+    let rows = await db.executeSQL(sql);
+
+    res.render("profile", {"user":rows[0]});
+});
+
 router.post('/login', async (req, res) => {
     let username = req.body.username;
     let password = req.body.password;
@@ -23,7 +31,6 @@ router.post('/login', async (req, res) => {
         res.render("admin")
     }
 
-    let hash = "";
     let error = "ERROR: Incorrect password";
 
     let sql = "SELECT * FROM guests WHERE username = ?";
@@ -33,15 +40,7 @@ router.post('/login', async (req, res) => {
     console.log(rows);
 
     if (rows.length > 0){
-       hash = rows[0].password;
-    } else {
-
-        error = "ERROR: Username not found";
-    }
-
-    // let match = await bcrypt.compare(password, hash);
-
-    if (password === hash){
+       if (password === rows[0].password){
         // appConfig.setAuth(req, true)
         let sql = "SELECT guestId FROM guests WHERE password = ?";
         let params = [password];
@@ -51,9 +50,15 @@ router.post('/login', async (req, res) => {
         req.session.guestId = data[0]["guestId"]
         console.log({"LogIn": req.session})
         res.render("index");
+        } else {
+            res.render("login", {"error":error});
+        }
     } else {
+        error = "ERROR: Username not found";
         res.render("login", {"error":error});
     }
+
+    
 });
 
 router.post('/create', async (req, res) => {
@@ -79,5 +84,26 @@ router.post('/create', async (req, res) => {
         
     }
 });
+
+router.post('/update', async (req, res) => {
+    let guestId = req.body.guestId;
+    let firstName = req.body.firstName;
+    let lastName = req.body.lastName;
+    let cardInfo = req.body.cardInfo;
+
+    console.log("GUESTID: " + guestId);
+
+    let sql = `UPDATE guests
+               SET firstName = ?,
+               lastName = ?,
+               cardInfo = ?
+               WHERE guestId = ${guestId}`;
+    let params = [firstName, lastName, cardInfo];
+    let rows = await db.executeSQL(sql, params);
+
+    
+    res.redirect('/guest/update');
+});
+
 
 module.exports = router;
