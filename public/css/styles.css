@@ -10,21 +10,24 @@ nav{
     text-align: left;
     margin: 20px 50px;
     background-image: linear-gradient(rgba(0,0,139,1), rgba(0,0,139,0));
-
 }
 
 .navButton{
-    color: white;
+    width: 175px;
     border: darkblue solid 3px;
-    width: 200px;
-    text-decoration: none;
 }
 
 .navButton:hover{
     color: blue;
-    background-color: white;
+    background-color: lightblue;
     border: darkblue solid 3px;
-    width: 150px;
+    width: 175px;
+}
+
+a{
+    color: white;
+    width: 175px;
+    text-decoration: none;
 }
 
 h1, h3{
@@ -37,15 +40,72 @@ h1, h3{
 h4{
     text-align:center;
     font-family: 'Lobster', cursive;
+    color: goldenrod;
+    text-shadow: 2px 2px darkblue;
+}
+
+p{
+    font-family: 'Goblin One', cursive;
+}
+
+.errorMessage{
+    color: red;
+    text-shadow: 1px 1px darkred;
+    text-align: center;
 }
 
 input, button{
     margin: 10px;
 }
 
+form{
+    background-color: white;
+    border: darkblue solid 3px;
+    width: 400px;
+    margin: 0px auto;
+    text-align: left;
+    padding: 20px;
+}
+
+#reservationForm{
+    width: 500px;
+}
+
+.buttonSectionForm{
+    text-align: center;
+}
+
+#loginSection{
+    justify-content: center;
+    background-image: url("/images/backgroundLogin.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 #roomTypesSection{
     display: flex;
     justify-content: center;
+    background-image: url("/images/backgroundRoomTypes.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.roomInfoAndImage{
+    display: flex;
+    text-align: left;
+    border: darkblue solid 3px;
+    background-color: white;
+}
+
+.roomImage{
+    width: 200px;
+    heght: 200px;
 }
 
 #homeSection{
@@ -56,6 +116,7 @@ input, button{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #reservationSection{
@@ -66,25 +127,76 @@ input, button{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
-#homeCenterSection, #reservationCenterSection, #roomTypesCenterSection{
+#editProfileSection{
+    display: flex;
+    justify-content: center;
+    background-image: url("/images/backgroundEditProfile.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#diningAmenitiesSection{
+    display: flex;
+    justify-content: center;
+    background-image: url("/images/backgroundDiningAmenities.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.diningAmenities, #eventText, #contactText{
+    background-color: white;
+    border: darkblue solid 3px;
+    text-align: left;
+    padding: 10px;
+}
+
+.diningAmenitiesImg{
+    text-align: center;
+}
+
+#eventsSection{
+    display: flex;
+    justify-content: center;
+    background-image: url("/images/backgroundEvents.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contactSection{
+    display: flex;
+    justify-content: center;
+    background-image: url("/images/backgroundContact.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#homeCenterSection, #reservationCenterSection, #roomTypesCenterSection,
+#editProfileCenterSection, #diningAmenitiesCenterSection, #eventsCenterSection, #contactCenterSection{
     text-align:center;
     padding: 20px 50px;
 }
 
-.roomInfoAndImage{
-    display: flex;
-    justify-content: center;
-}
-
-.roomImage{
-    width: 200px;
-    heght: 200px;
-}
-
 #diningImage, #poolImage{
     width: 400px;
+}
+
+.stretchedInterface{
+    background-image: linear-gradient(rgba(0,0,139,1), rgba(0,0,139,0));
 }
 
 footer{
