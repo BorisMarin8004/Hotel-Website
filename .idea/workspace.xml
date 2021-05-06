@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f33c4aab-b6a8-4387-83e2-67835b24b2f0" name="Default Changelist" comment="Added reservation.ejs and reservation routes">
-      <change afterPath="$PROJECT_DIR$/public/images/diningImage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/poolImage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/diningAndAmenities.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/contact.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/contact.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/events.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/events.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620106337321</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added reservation.ejs and reservation routes">
+      <created>1620258942268</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620258942268</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
