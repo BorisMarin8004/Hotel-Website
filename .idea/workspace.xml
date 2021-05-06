@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67ced2b1-6d84-4be8-9e89-fcb5fcea14cb" name="Default Changelist" comment="" />
+    <list default="true" id="67ced2b1-6d84-4be8-9e89-fcb5fcea14cb" name="Default Changelist" comment="Added reservation.ejs and reservation routes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/makeReservation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/makeReservation.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,8 +64,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.open" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -74,6 +81,8 @@
       <workItem from="1619913777512" duration="2840000" />
       <workItem from="1620152104616" duration="230000" />
       <workItem from="1620154859188" duration="1063000" />
+      <workItem from="1620156858901" duration="826000" />
+      <workItem from="1620253260177" duration="9740000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed Images in room types and redirect root">
       <created>1619915816609</created>
