@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67ced2b1-6d84-4be8-9e89-fcb5fcea14cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin.ejs" afterDir="false" />
-    </list>
+    <list default="true" id="67ced2b1-6d84-4be8-9e89-fcb5fcea14cb" name="Default Changelist" comment="CSS styles added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +42,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.open">
     <configuration name="open" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -73,8 +69,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.open" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620106337321</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="CSS styles added">
+      <created>1620265812204</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620265812204</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +167,7 @@
     <MESSAGE value="Started sessions" />
     <MESSAGE value="Added reservation.ejs and reservation routes" />
     <MESSAGE value="Added admin page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added admin page" />
+    <MESSAGE value="CSS styles added" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSS styles added" />
   </component>
 </project>

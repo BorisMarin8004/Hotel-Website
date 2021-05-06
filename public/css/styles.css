@@ -16,7 +16,8 @@ nav{
 .navButton{
     color: white;
     border: darkblue solid 3px;
-    width: 150px;
+    width: 200px;
+    text-decoration: none;
 }
 
 .navButton:hover{
