@@ -1,16 +1,52 @@
 <%-include ('partials/header.ejs')%>
 
-<title>Admin Page</title>
+    <title>Admin Page</title>
 </head>
-<body>
+    <body>
 
-<nav class="navBar">
-    <a class="navButton" href="/guest/login">Log out</a><br>
-</nav>
+        <nav class="navBar">
+            <a class="navButton" href="/guest/login">Log out</a><br>
+        </nav>
 
-<p>
-    Tables:
-</p>
+        <h2>
+            Tables:
+        </h2>
 
-</body>
+        <div id="tableLinks">
+            <a class="tableLink" href="/admin/guests">Guests table</a>
+            <a class="tableLink" href="/admin/rooms">Rooms table</a>
+            <a class="tableLink" href="/admin/reservations">Reservations table</a>
+        </div>
+        <div id="tableRecords">
+        <% if (typeof table != "undefined") {%>
+            <% if (keyWord === "guests") { %>
+                <% for (row of table){ %>
+                    <p>
+                        <%="Id: " +  row.guestId + "; Firstname: " + row.firstName + "; Lastname: " + row.lastName%>
+                        <br>
+                        <%=" Username: " +  row.username + "; Password: " +  row.password%>
+                    </p>
+                <% } %>
+            <% } else if (keyWord === "rooms") { %>
+                <% for (row of table){ %>
+                    <p>
+                        <%="Id: " +  row.roomId + "; Type: " + row.type + "; Price: " + row.price%>
+                        <br>
+                        <%=" Image: " +  row.image + "; Description: " +  row.description%>
+                    </p>
+                <% } %>
+            <% } else { %>
+                <% for (row of table){ %>
+                    <p>
+                        <%="Id: " +  row.resId + "; roomId: " + row.roomId + "; guestId: " + row.guestId%>
+                        <br>
+                        <%=" Start Date: " +  row.startDate + "; End Date: " +  row.endDate%>
+                    </p>
+                <% } %>
+            <% } %>
+        <% } else { %>
+            <%="Choose table"%>
+        <% } %>
+        </div>
+    </body>
 </html>

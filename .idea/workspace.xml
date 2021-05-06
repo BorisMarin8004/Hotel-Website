@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f33c4aab-b6a8-4387-83e2-67835b24b2f0" name="Default Changelist" comment="Added reservation.ejs and reservation routes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/contact.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/contact.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/diningAndAmenities.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/diningAndAmenities.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/events.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/events.ejs" afterDir="false" />
-    </list>
+    <list default="true" id="67ced2b1-6d84-4be8-9e89-fcb5fcea14cb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="James" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1rxN60NvcQC2hmhX5zpm9TUNdia" />
@@ -33,7 +39,6 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -72,7 +77,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f33c4aab-b6a8-4387-83e2-67835b24b2f0" name="Default Changelist" comment="Added reservation.ejs and reservation routes" />
+      <changelist id="67ced2b1-6d84-4be8-9e89-fcb5fcea14cb" name="Default Changelist" comment="" />
       <created>1619913602129</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -80,8 +85,8 @@
       <workItem from="1619913603386" duration="116000" />
       <workItem from="1619913777512" duration="2840000" />
       <workItem from="1620152104616" duration="230000" />
-      <workItem from="1620154859188" duration="1063000" />
-      <workItem from="1620262900249" duration="1393000" />
+      <workItem from="1620154859188" duration="1369000" />
+      <workItem from="1620256059953" duration="1104000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed Images in room types and redirect root">
       <created>1619915816609</created>
@@ -132,21 +137,7 @@
       <option name="project" value="LOCAL" />
       <updated>1620106337321</updated>
     </task>
-    <task id="LOCAL-00008" summary="Added reservation.ejs and reservation routes">
-      <created>1620258942268</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1620258942268</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Added reservation.ejs and reservation routes">
-      <created>1620259355473</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1620259355473</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +159,7 @@
     <MESSAGE value="Fixed Images in room types and redirect root" />
     <MESSAGE value="Started sessions" />
     <MESSAGE value="Added reservation.ejs and reservation routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added reservation.ejs and reservation routes" />
+    <MESSAGE value="Added admin page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added admin page" />
   </component>
 </project>
