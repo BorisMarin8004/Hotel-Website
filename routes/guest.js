@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const bcrypt = require('bcrypt');
+const appConfig = require('../functions/appConfig')
 const db = require("../functions/db")
 
 router.get('/', (req, res) => {
@@ -17,6 +18,11 @@ router.post('/login', async (req, res) => {
     let username = req.body.username;
     let password = req.body.password;
 
+    if (username === appConfig.adminUsername && password === appConfig.adminPassword){
+        req.session.authenticated = true
+        res.render("admin")
+    }
+
     let hash = "";
     let error = "ERROR: Incorrect password";
 
@@ -29,6 +35,7 @@ router.post('/login', async (req, res) => {
     if (rows.length > 0){
        hash = rows[0].password;
     } else {
+
         error = "ERROR: Username not found";
     }
 
