@@ -16,11 +16,11 @@
 
         <form method="POST" action="reservation/makeReservation">
             First Name:
-            <input type="text" name="firstName"><br>
+            <input type="text" name="firstName" value="<%=guestData.firstName%>"><br>
             Last Name:
-            <input type="text" name="lastName"><br>
+            <input type="text" name="lastName" value="<%=guestData.lastName%>"><br>
             Credit Card:
-            <input type="text" name="creditCard"><br>
+            <input type="text" name="creditCard" value="<%=guestData.cardInfo%>"><br>
             Check-In Date:
             <input type="date" max="01/01/2022"
                required pattern="\d{4}-\d{2}-\d{2}"
@@ -32,9 +32,15 @@
                placeholder="YYYY-MM-DD"
                name="outDate"><br>
             Room Type:
-            <input type="radio" name="type" value="oneBed"> 1 Bedroom
-            <input type="radio" name="type" value="twoBed"> 2 Bedroom
-            <input type="radio" name="type" value="twoBed"> Villa
+            <% if (freeRooms.single) {%>
+                <input type="radio" name="type" value="oneBed"> 1 Bedroom
+            <% } if (freeRooms.double) { %>
+                <input type="radio" name="type" value="twoBed"> 2 Bedroom
+            <% } if (freeRooms.three) { %>
+                <input type="radio" name="type" value="threeBed"> 3 Bedroom
+            <% } if (freeRooms.villa) { %>
+                <input type="radio" name="type" value="twoBed"> Villa
+            <% } %>
             <br>
             <button> Make Reservation </button>
         </form>

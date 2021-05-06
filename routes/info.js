@@ -8,8 +8,9 @@ router.get('/', (req, res) => {
 });
 
 router.get('/roomTypes', async (req, res) => {
-    let sql = 'SELECT * FROM Rooms'
+    let sql = 'SELECT * FROM rooms GROUP BY type'
     let rooms = await db.executeSQL(sql);
+    console.log(rooms)
     res.render("roomTypes", {"rooms": rooms})
 })
 
