@@ -2,10 +2,6 @@ body, html {
     height: 100%;
 }
 
-#loginSection{
-    text-align: center;
-}
-
 nav{
     text-align: left;
     margin: 20px 50px;
@@ -29,6 +25,7 @@ a{
     width: 175px;
     text-decoration: none;
 }
+
 
 h1, h3{
     text-align: center;
@@ -76,8 +73,8 @@ form{
 }
 
 #loginSection{
-    justify-content: center;
     background-image: url("/images/backgroundLogin.jpg");
+    justify-content: center;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -85,15 +82,25 @@ form{
     background-attachment: fixed;
 }
 
+#adminSection{
+    background-image: url("/images/backgroundLogin.jpg");
+}
+
+.record{
+    background-color: white;
+    border: darkblue solid 3px;
+    width: 400px;
+    margin: 10px auto;
+    text-align: left;
+    padding: 20px;
+}
+
+#homeSection{
+    background-image: url("/images/backgroundIndex.jpg");
+}
+
 #roomTypesSection{
-    display: flex;
-    justify-content: center;
     background-image: url("/images/backgroundRoomTypes.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .roomInfoAndImage{
@@ -108,48 +115,16 @@ form{
     heght: 200px;
 }
 
-#homeSection{
-    display: flex;
-    justify-content: center;
-    background-image: url("/images/backgroundIndex.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 #reservationSection{
-    display: flex;
-    justify-content: center;
     background-image: url("/images/backgroundReservation.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 #editProfileSection{
-    display: flex;
-    justify-content: center;
     background-image: url("/images/backgroundEditProfile.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 #diningAmenitiesSection{
-    display: flex;
-    justify-content: center;
     background-image: url("/images/backgroundDiningAmenities.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .diningAmenities, #eventText, #contactText{
@@ -164,20 +139,17 @@ form{
 }
 
 #eventsSection{
-    display: flex;
-    justify-content: center;
     background-image: url("/images/backgroundEvents.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 #contactSection{
+    background-image: url("/images/backgroundContact.jpg");
+}
+
+#adminSection, #homeSection, #roomTypesSection, #reservationSection,
+#editProfileSection, #diningAmenitiesSection, #eventsSection, #contactSection{
     display: flex;
     justify-content: center;
-    background-image: url("/images/backgroundContact.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -186,7 +158,8 @@ form{
 }
 
 #homeCenterSection, #reservationCenterSection, #roomTypesCenterSection,
-#editProfileCenterSection, #diningAmenitiesCenterSection, #eventsCenterSection, #contactCenterSection{
+#editProfileCenterSection, #diningAmenitiesCenterSection, #eventsCenterSection,
+#contactCenterSection, #adminCenterSection{
     text-align:center;
     padding: 20px 50px;
 }

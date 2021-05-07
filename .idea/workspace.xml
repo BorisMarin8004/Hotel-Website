@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cead3db2-aa77-4d09-98e9-5278813bddc1" name="Default Changelist" comment="CSS Added">
-      <change afterPath="$PROJECT_DIR$/public/images/backgroundContact.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/backgroundDiningAmenities.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/backgroundEditProfile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/backgroundEvents.jpg" afterDir="false" />
+    <list default="true" id="cead3db2-aa77-4d09-98e9-5278813bddc1" name="Default Changelist" comment="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/contact.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/contact.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/diningAndAmenities.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/diningAndAmenities.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/events.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/events.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/makeReservation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/makeReservation.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/profile.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/profile.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/roomTypes.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/roomTypes.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620266395292</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified">
+      <created>1620287514174</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1620287514174</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +201,7 @@
     <MESSAGE value="Added tables in admin page" />
     <MESSAGE value="Changes reservations" />
     <MESSAGE value="CSS Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="CSS Added" />
+    <MESSAGE value="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified" />
   </component>
 </project>

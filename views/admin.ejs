@@ -2,51 +2,61 @@
 
     <title>Admin Page</title>
 </head>
-    <body>
+    <body class ="stretchedInterface">
+        <div id = "adminSection">
+            <nav class="navBar">
+                <div class = "navButton"><a href="/admin/guests">Guests Table</a></div>
+                <div class = "navButton"><a href="/admin/rooms">Rooms Table</a></div>
+                <div class = "navButton"><a href="/admin/reservations">Reservations Table</a></div>
+                <div class = "navButton"><a href="/guest/login">Log Out</a><br>
+            </nav>
 
-        <nav class="navBar">
-            <a class="navButton" href="/guest/login">Log out</a><br>
-        </nav>
+            <div id = "adminCenterSection">
 
-        <h2>
-            Tables:
-        </h2>
+                <h1> TABLES </h1>
 
-        <div id="tableLinks">
-            <a class="tableLink" href="/admin/guests">Guests table</a>
-            <a class="tableLink" href="/admin/rooms">Rooms table</a>
-            <a class="tableLink" href="/admin/reservations">Reservations table</a>
-        </div>
-        <div id="tableRecords">
-        <% if (typeof table != "undefined") {%>
-            <% if (keyWord === "guests") { %>
-                <% for (row of table){ %>
-                    <p>
-                        <%="Id: " +  row.guestId + "; Firstname: " + row.firstName + "; Lastname: " + row.lastName%>
-                        <br>
-                        <%=" Username: " +  row.username + "; Password: " +  row.password%>
+                <div id="tableRecords">
+                    <% if (typeof table != "undefined") {%>
+                        <% if (keyWord === "guests") { %>
+                            <% for (row of table){ %>
+                            <p class = "record">
+                                <%="Id: " +  row.guestId%><br>
+                                <%="Firstname: " + row.firstName%><br>
+                                <%="Lastname: " + row.lastName%><br>
+                                <%="Username: " +  row.username%><br>
+                                <%="Password: " +  row.password%><br>
+                            </p>
+                            <% } %>
+                        <% } else if (keyWord === "rooms") { %>
+                            <% for (row of table){ %>
+                            <p class = "record">
+                                <%="Id: " +  row.roomId%><br>
+                                <%="Type: " + row.type%><br>
+                                <%="Price: " + row.price%><br>
+                                <%="Image: " +  row.image%><br>
+                                <%="Description: " +  row.description%><br>
+                            </p>
+                            <% } %>
+                        <% } else { %>
+                            <% for (row of table){ %>
+                            <p class = "record">
+                                <%="Id: " +  row.resId%><br>
+                                <%="RoomId: " + row.roomId%><br>
+                                <%="GuestId: " + row.guestId%><br>
+                                <%="Start Date: " +  row.startDate%><br>
+                                <%="End Date: " +  row.endDate%><br>
+                            </p>
+                            <% } %>
+                        <% } %>
+                    <% } else { %>
+                    <p class = "record">
+                        <%="Choose a Table"%>
                     </p>
-                <% } %>
-            <% } else if (keyWord === "rooms") { %>
-                <% for (row of table){ %>
-                    <p>
-                        <%="Id: " +  row.roomId + "; Type: " + row.type + "; Price: " + row.price%>
-                        <br>
-                        <%=" Image: " +  row.image + "; Description: " +  row.description%>
-                    </p>
-                <% } %>
-            <% } else { %>
-                <% for (row of table){ %>
-                    <p>
-                        <%="Id: " +  row.resId + "; roomId: " + row.roomId + "; guestId: " + row.guestId%>
-                        <br>
-                        <%=" Start Date: " +  row.startDate + "; End Date: " +  row.endDate%>
-                    </p>
-                <% } %>
-            <% } %>
-        <% } else { %>
-            <%="Choose table"%>
-        <% } %>
+                    <% } %>
+                </div>
+
+            </div>
+
         </div>
     </body>
 </html>
