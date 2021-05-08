@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const bcrypt = require('bcrypt');
 const appConfig = require('../functions/appConfig')
 const db = require("../functions/db")
 
@@ -8,7 +7,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-    console.log(req.route.path)
+    // console.log(req.route.path)
     req.session.authenticated = false
     req.session.guestId = null
     res.render("login");
@@ -37,18 +36,18 @@ router.post('/login', async (req, res) => {
     let params = [username];
     let rows = await db.executeSQL(sql, params);
 
-    console.log(rows);
+    // console.log(rows);
 
     if (rows.length > 0){
        if (password === rows[0].password){
         // appConfig.setAuth(req, true)
-        let sql = "SELECT guestId FROM guests WHERE password = ?";
-        let params = [password];
-        let data = await db.executeSQL(sql, params);
+        // let sql = "SELECT guestId FROM guests WHERE password = ?";
+        // let params = [password];
+        // let data = await db.executeSQL(sql, params);
 
         req.session.authenticated = true
-        req.session.guestId = data[0]["guestId"]
-        console.log({"LogIn": req.session})
+        req.session.guestId = rows[0].guestId;
+        // console.log({"LogIn": req.session})
         res.render("index");
         } else {
             res.render("login", {"error":error});
