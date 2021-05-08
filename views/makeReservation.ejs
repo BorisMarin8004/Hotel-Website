@@ -1,20 +1,19 @@
 <%-include ('partials/header.ejs')%>
 
-    <title>Home Page</title>
+    <title>Reservations Page</title>
 </head>
 <body>
-
-<h1>Reservations</h1>
 
 <div id = "reservationSection">
 
     <%-include ('partials/nav.ejs')%>
 
     <div id = "reservationCenterSection">
-        To make a reservation, please fill in the information below, then click "Make Reservation".
-        <br>
+        <h1>RESERVATIONS</h1>
 
-        <form method="POST" action="reservation/makeReservation">
+        <form id = "reservationForm" method="POST" action="reservation/makeReservation">
+            <p>To make a reservation, please fill in the information below, then click "Make Reservation".</p>
+            <br>
             First Name:
             <input type="text" name="firstName" value="<%=guestData.firstName%>"><br>
             Last Name:
@@ -42,7 +41,9 @@
                 <input type="radio" name="type" value="twoBed"> Villa
             <% } %>
             <br>
+            <div class = "buttonSectionForm">
             <button> Make Reservation </button>
+            </div>
         </form>
 
         <% if (typeof message != "undefined"){ %>
