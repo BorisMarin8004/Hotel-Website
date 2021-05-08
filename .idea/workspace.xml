@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cead3db2-aa77-4d09-98e9-5278813bddc1" name="Default Changelist" comment="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
-    </list>
+    <list default="true" id="cead3db2-aa77-4d09-98e9-5278813bddc1" name="Default Changelist" comment="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,7 +177,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620422404796</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified">
+      <created>1620423562822</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1620423562822</updated>
+    </task>
+    <task id="LOCAL-00014" summary="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified">
+      <created>1620423653777</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1620423653777</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
