@@ -1,0 +1,35 @@
+<%-include ('../partials/header.ejs')%>
+
+    <title>Home Page</title>
+</head>
+<body>
+
+
+
+<div id = "editProfileSection">
+
+    <%-include ('../partials/nav.ejs')%>
+
+    <div id = "editProfileCenterSection">
+        <h1 class="pageTitle">USER PROFILE</h1>
+
+        <form method="POST" action="/guest/update">
+            First Name:
+                <input type="text" name="firstName" value="<%=user.firstName%>"><br>
+            Last Name:
+                <input type="text" name="lastName" value="<%=user.lastName%>"><br>
+            Credit Card Info:
+                <input type="text" name="cardInfo" value="<%=user.cardInfo%>"><br>
+            <input type="hidden" name="guestId" value="<%=user.guestId%>">
+
+            <div class = "buttonSectionForm">
+            <button>Update Profile</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<%-include ('../partials/footer.ejs')%>
+
+</body>
+</html>

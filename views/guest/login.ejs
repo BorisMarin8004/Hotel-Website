@@ -1,27 +1,31 @@
-<%-include ('partials/header.ejs')%>
+<%-include ('../partials/header.ejs')%>
 
   <title>Login</title>
 </head>
-<body>
-    <h3>Welcome to the Shoreline Resort</h3>
+<body class ="stretchedInterface">
+
     <div id = "loginSection">
-    Login:
+        <h3>Welcome to the Shoreline Resort</h3>
     <form action="/guest/login" method="POST">
 
+        <% if (typeof error != "undefined") { %>
+            <h5 class = "errorMessage"><%= error %></h5>
+        <% } %>
+
+        <h3>Login:</h3>
         Username:
         <input type="text" name="username"><br>
 
         Password:
         <input type="password" name="password"><br>
 
+        <div class = "buttonSectionForm">
         <button>Login</button>
-
+        </div>
     </form>
 
-
-    Create an Account:
     <form action ="/guest/create" method="POST">
-
+        <h3>Create an Account:</h3>
         First Name:
         <input type="text" name="fName" maxlength="20"><br>
         
@@ -34,14 +38,10 @@
         Password:
         <input type="password" name="password" maxlength="20"><br>
 
+        <div class = "buttonSectionForm">
         <button>Create</button>
-
+        </div>
     </form>
-
-    <% if (typeof error != "undefined") { %>
-    <%= error %>
-    <% } %>
     </div>
-
 </body>
 </html>

@@ -1,13 +1,53 @@
-#loginSection{
-    text-align: center;
+body, html {
+    height: 100%;
 }
 
 nav{
     text-align: left;
-    padding: 20px 50px;
+    margin: 20px 50px;
+    background-image: linear-gradient(rgba(0,0,139,1), rgba(0,0,139,0));
 }
 
+.navButton{
+    width: 175px;
+    border: darkblue solid 3px;
+}
+
+.navButton:hover{
+    color: blue;
+    background-color: lightblue;
+    border: darkblue solid 3px;
+    width: 175px;
+}
+
+a{
+    color: white;
+    width: 175px;
+    text-decoration: none;
+}
+
+
 h1, h3{
+    text-align: center;
+    font-family: 'Goblin One', cursive;
+    color: darkblue;
+    text-shadow: 2px 2px white;
+}
+
+h4{
+    text-align:center;
+    font-family: 'Lobster', cursive;
+    color: goldenrod;
+    text-shadow: 2px 2px darkblue;
+}
+
+p{
+    font-family: 'Goblin One', cursive;
+}
+
+.errorMessage{
+    color: red;
+    text-shadow: 1px 1px darkred;
     text-align: center;
 }
 
@@ -15,19 +55,59 @@ input, button{
     margin: 10px;
 }
 
-#homeSection, #reservationSection, #roomTypesSection{
-    display: flex;
-    justify-content: center;
+form{
+    background-color: white;
+    border: darkblue solid 3px;
+    width: 400px;
+    margin: 0px auto;
+    text-align: left;
+    padding: 20px;
 }
 
-#homeCenterSection, #reservationCenterSection, #roomTypesCenterSection{
-    text-align:center;
-    padding: 20px 50px;
+#reservationForm{
+    width: 500px;
+}
+
+.buttonSectionForm{
+    text-align: center;
+}
+
+#loginSection{
+    background-image: url("/images/backgroundLogin.jpg");
+    justify-content: center;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#adminSection{
+    background-image: url("/images/backgroundLogin.jpg");
+}
+
+.record{
+    background-color: white;
+    border: darkblue solid 3px;
+    width: 400px;
+    margin: 10px auto;
+    text-align: left;
+    padding: 20px;
+}
+
+#homeSection{
+    background-image: url("/images/backgroundIndex.jpg");
+}
+
+#roomTypesSection{
+    background-image: url("/images/backgroundRoomTypes.jpg");
 }
 
 .roomInfoAndImage{
     display: flex;
-    justify-content: center;
+    text-align: left;
+    border: darkblue solid 3px;
+    background-color: white;
 }
 
 .roomImage{
@@ -35,11 +115,66 @@ input, button{
     heght: 200px;
 }
 
+#reservationSection{
+    background-image: url("/images/backgroundReservation.jpg");
+}
+
+#editProfileSection{
+    background-image: url("/images/backgroundEditProfile.jpg");
+}
+
+#diningAmenitiesSection{
+    background-image: url("/images/backgroundDiningAmenities.jpg");
+}
+
+.diningAmenities, #eventText, #contactText{
+    background-color: white;
+    border: darkblue solid 3px;
+    text-align: left;
+    padding: 10px;
+}
+
+.diningAmenitiesImg{
+    text-align: center;
+}
+
+#eventsSection{
+    background-image: url("/images/backgroundEvents.jpg");
+}
+
+#contactSection{
+    background-image: url("/images/backgroundContact.jpg");
+}
+
+#adminSection, #homeSection, #roomTypesSection, #reservationSection,
+#editProfileSection, #diningAmenitiesSection, #eventsSection, #contactSection{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#homeCenterSection, #reservationCenterSection, #roomTypesCenterSection,
+#editProfileCenterSection, #diningAmenitiesCenterSection, #eventsCenterSection,
+#contactCenterSection, #adminCenterSection{
+    text-align:center;
+    padding: 20px 50px;
+}
+
 #diningImage, #poolImage{
     width: 400px;
+}
+
+.stretchedInterface{
+    background-image: linear-gradient(rgba(0,0,139,1), rgba(0,0,139,0));
 }
 
 footer{
     text-align:center;
     padding: 20px 50px;
+    background-color: darkblue;
+    color: white;
 }

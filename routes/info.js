@@ -11,26 +11,26 @@ router.get('/roomTypes', async (req, res) => {
     let sql = 'SELECT * FROM rooms GROUP BY type'
     let rooms = await db.executeSQL(sql);
     console.log(rooms)
-    res.render("roomTypes", {"rooms": rooms})
+    res.render("./info/roomTypes", {"rooms": rooms})
 })
 
 router.get('/contact', (req, res) => {
-    res.render('contact')
+    res.render('./info/contact')
 })
 
 router.get('/events', async (req, res) => {
     // let sql = 'SELECT * FROM Events'
     // let events = await db.executeSQL(sql);
     let events = null
-    res.render("events", {"events": events})
+    res.render("./info/events", {"events": events})
 })
 
 router.get('/diningAndAmenities', (req, res) => {
-    res.render('diningAndAmenities')
+    res.render('./info/diningAndAmenities')
 })
 
 router.get('/specialDeals', (req, res) => {
-    res.render('specialDeals')
+    res.render('./info/specialDeals')
 })
 
 module.exports = router

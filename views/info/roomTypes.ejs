@@ -1,31 +1,31 @@
-<%-include ('partials/header.ejs')%>
+<%-include ('../partials/header.ejs')%>
 
     <title>Room Types</title>
 </head>
-<body>
+<body class ="stretchedInterface">
 
-<h1>Available Rooms We Offer:</h1>
+
 
 <div id = "roomTypesSection">
 
-    <%-include ('partials/nav.ejs')%>
+    <%-include ('../partials/nav.ejs')%>
 
     <div id = "roomTypesCenterSection">
+        <h1>AVAILABLE ROOMS WE OFFER:</h1>
+
     <% for (room of rooms) { %>
             <div class = "roomInfoAndImage">
-            <div>
-            Room Number: <%=room.roomId%>
-            Type: <%=room.type%>
-            Price: <%=room.price%>
+            <p>
+            Room Number: <%=room.roomId%><br>
+            Type: <%=room.type%><br>
+            Price: <%=room.price%><br>
             Description: <%=room.description%>
-            </div>
+            </p>
             <img class="roomImage" src="/images/<%=room.image%>">
             </div>
             <br>
     <% } %>
     </div>
 </div>
-    <%-include ('partials/footer.ejs')%>
-
 </body>
 </html>
