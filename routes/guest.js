@@ -1,14 +1,9 @@
 const router = require('express').Router();
-const bcrypt = require('bcrypt');
 const appConfig = require('../functions/appConfig')
 const db = require("../functions/db")
 
-router.get('/', (req, res) => {
-    res.send("From guest.js");
-});
-
 router.get('/login', (req, res) => {
-    console.log(req.route.path)
+    // console.log(req.route.path)
     req.session.authenticated = false
     req.session.guestId = null
     res.render("./guest/login");
@@ -37,20 +32,18 @@ router.post('/login', async (req, res) => {
     let params = [username];
     let rows = await db.executeSQL(sql, params);
 
-    console.log(rows);
+    // console.log(rows);
 
     if (rows.length > 0){
        if (password === rows[0].password){
         // appConfig.setAuth(req, true)
-        let sql = "SELECT guestId FROM guests WHERE password = ?";
-        let params = [password];
-        let data = await db.executeSQL(sql, params);
+        // let sql = "SELECT guestId FROM guests WHERE password = ?";
+        // let params = [password];
+        // let data = await db.executeSQL(sql, params);
 
         req.session.authenticated = true
-        req.session.guestId = data[0]["guestId"]
-        req.session.expire = new Date(Date.now() + (30 * 1000))
-
-        console.log({"LogIn": req.session})
+        req.session.guestId = rows[0].guestId;
+        // console.log({"LogIn": req.session})
         res.render("index");
         } else {
             res.render("./guest/login", {"error":error});
@@ -73,7 +66,7 @@ router.post('/create', async (req, res) => {
     let params = [fName, lName, username, password];
 
     if (fName.length <= 0 || lName.length <= 0 || username.length <= 0 || password.length <= 0){
-        res.render("/guest/login", {"error":"ERROR: All fields must be filled!"});
+        res.render("./guest/login", {"error":"ERROR: All fields must be filled!"});
     } else{
         let sqlCheck = "SELECT guestId FROM guests WHERE username=?";
         let rows = await db.executeSQL(sqlCheck, [username]);
@@ -104,7 +97,7 @@ router.post('/update', async (req, res) => {
     let rows = await db.executeSQL(sql, params);
 
     
-    res.redirect('./guest/update');
+    res.redirect('/guest/update');
 });
 
 

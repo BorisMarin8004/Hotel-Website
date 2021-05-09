@@ -41,4 +41,23 @@ router.post("/makeReservation", async (req, res) => {
     res.render("./reservation/makeReservation", {"message": "Reservation made!(Not actually)"});
 });
 
+router.get("/viewReservations", async function(req, res){
+    let guestId = req.session.guestId;
+    let sql = `SELECT resId, reservations.roomId, startDate, endDate, price, type, description, image
+               FROM rooms JOIN reservations
+               ON rooms.roomId = reservations.roomId
+               WHERE guestId = ${guestId}`;
+    let rows = await db.executeSQL(sql);
+    res.render("./reservation/viewReservations", {"reservations":rows});
+});
+
+router.post("/viewReservations", async function(req, res){
+    let resId = req.body.resId;
+    let sql = `DELETE FROM reservations WHERE resId = ${resId}`;
+    await db.executeSQL(sql);
+    res.redirect("/reservation/viewReservations");
+});
+
+
+
 module.exports = router;
