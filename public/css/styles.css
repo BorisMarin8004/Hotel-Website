@@ -55,7 +55,7 @@ input, button{
     margin: 10px;
 }
 
-form{
+.formStyled{
     background-color: white;
     border: darkblue solid 3px;
     width: 400px;
@@ -84,6 +84,11 @@ form{
 
 #adminSection{
     background-image: url("/images/backgroundLogin.jpg");
+}
+
+.recordSection{
+    display: flex;
+    justify-content: center;
 }
 
 .record{

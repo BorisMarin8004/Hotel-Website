@@ -29,8 +29,14 @@
                                 </p>
                             <% } %>
                         <% } else if (keyWord === "rooms") { %>
+                                <button>Add New Room</button>
                             <% for (row of table){ %>
+                                <div class = recordSection>
+                                <div>
+                                    <a href = "/admin/room/update?roomId=<%=row.roomId%>">Update</a>
+                                    <button>Delete</button><br>
 
+                                </div>
                                 <p class = "record">
                                     <%="Id: " +  row.roomId%><br>
                                     <%="Type: " + row.type%><br>
@@ -38,13 +44,14 @@
                                     <%="Image: " +  row.image%><br>
                                     <%="Description: " +  row.description%><br>
                                 </p>
+                                </div>
                             <% } %>
                         <% } else { %>
                             <% for (row of table){ %>
-
-                                <button>Update Reservation Info.</button>
+                                <div class = recordSection>
+                                <div>
                                 <button>Delete Reservation Info.</button>
-
+                                </div>
                                 <p class = "record">
                                     <%="Id: " +  row.resId%><br>
                                     <%="RoomId: " + row.roomId%><br>
@@ -52,6 +59,7 @@
                                     <%="Start Date: " +  row.startDate%><br>
                                     <%="End Date: " +  row.endDate%><br>
                                 </p>
+                                </div>
                             <% } %>
                         <% } %>
                     <% } else { %>

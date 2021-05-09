@@ -6,7 +6,7 @@
 
     <div id = "loginSection">
         <h3>Welcome to the Shoreline Resort</h3>
-    <form action="/guest/login" method="POST">
+    <form action="/guest/login" method="POST" class = "formStyled">
 
         <% if (typeof error != "undefined") { %>
             <h5 class = "errorMessage"><%= error %></h5>
@@ -24,7 +24,7 @@
         </div>
     </form>
 
-    <form action ="/guest/create" method="POST">
+    <form action ="/guest/create" method="POST" class = "formStyled">
         <h3>Create an Account:</h3>
         First Name:
         <input type="text" name="fName" maxlength="20"><br>

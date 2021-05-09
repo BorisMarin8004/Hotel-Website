@@ -19,7 +19,7 @@
                 End Date: <%=reservation.endDate%>
                 </p>
                 <img class="roomImage" src="/images/<%=reservation.image%>">
-                <form action="/reservation/viewReservations" method="POST">
+                <form action="/reservation/viewReservations" method="POST" class = "formStyled">
                     <input type="hidden" value="<%=reservation.resId%>" name="resId">
                     <button>Cancel Reservation</button>
                 </form>
