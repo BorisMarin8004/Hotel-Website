@@ -3,8 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="cead3db2-aa77-4d09-98e9-5278813bddc1" name="Default Changelist" comment="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/appConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/appConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/guest.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/guest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/reservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reservation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/admin.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/contact.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/contact.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/diningAndAmenities.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/diningAndAmenities.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/events.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/events.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/guest/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/makeReservation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/reservation/makeReservation.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/profile.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/guest/profile.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/roomTypes.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/roomTypes.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/specialDeals.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/specialDeals.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +61,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/info" />
+      <recent name="$PROJECT_DIR$/views/guest" />
+      <recent name="$PROJECT_DIR$/views/reservation" />
+      <recent name="$PROJECT_DIR$/views/admin" />
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
@@ -78,15 +95,15 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.open" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.open" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="67ced2b1-6d84-4be8-9e89-fcb5fcea14cb" name="Default Changelist" comment="" />
+      <changelist id="cead3db2-aa77-4d09-98e9-5278813bddc1" name="Default Changelist" comment="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified" />
       <created>1619913602129</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -96,6 +113,7 @@
       <workItem from="1620152104616" duration="230000" />
       <workItem from="1620154859188" duration="1369000" />
       <workItem from="1620256059953" duration="1104000" />
+      <workItem from="1620525795569" duration="559000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed Images in room types and redirect root">
       <created>1619915816609</created>
