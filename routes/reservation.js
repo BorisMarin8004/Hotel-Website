@@ -3,9 +3,8 @@ const db = require("../functions/db")
 
 async function getFreeRooms (startDate, endDate){
     console.log(startDate, endDate)
-    let sql = `SELECT rooms.roomId, type, price FROM rooms INNER JOIN reservations
-           WHERE (startDate <= ${startDate} AND endDate <= ${endDate}) 
-           OR (startDate >= ${startDate} AND endDate >= ${endDate})`
+    let sql = `SELECT rooms.roomId, type, price FROM rooms LEFT JOIN reservations ON reservations.roomId=rooms.roomId
+           WHERE (NOT (startDate > ${startDate} AND endDate > ${endDate}) OR (startDate IS NULL AND endDate IS NULL))`
     return await db.executeSQL(sql)
 }
 
@@ -24,6 +23,7 @@ router.get("/updateAvailabilityInfo", async (req, res) => {
     if (typeof startDate !== 'undefined' && typeof startDate !== 'undefined' && typeof startDate !== 'undefined'){
         freeRooms = await getFreeRooms(startDate, endDate)
     }
+    console.log(freeRooms)
     res.send(freeRooms)
 })
 
@@ -36,12 +36,20 @@ router.post("/makeReservation", async (req, res) => {
     let roomType = req.body.type
     // Insert info into reservation db
 
-    let rooms = getFreeRooms()
+    let rooms = await getFreeRooms(inDate, outDate)
+    console.log({"Rooms": rooms})
+    let roomId = null
+    for (let room of rooms){
+        if (room.type === roomType){
+            roomId = room["roomId"]
+        }
+    }
 
     console.log({"guestId": req.session.guestId, "RoomType": roomType})
-    let sql = "INSERT INTO reservations (startDate, endDate) VALUES (?, ?);"
-    let params = [inDate, outDate];
+    let sql = "INSERT INTO reservations (roomId, guestId, startDate, endDate) VALUES (?, ?, ?, ?);"
+    let params = [roomId, req.session.guestId, inDate, outDate];
     let rows = await db.executeSQL(sql, params);
+    console.log({"INSERT": rows})
     res.redirect("/reservation/makeReservation");
 });
 

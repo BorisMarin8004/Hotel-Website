@@ -1,4 +1,11 @@
-const appConfig = require('../functions/appConfig')
+let submitForm = $("#submitForm")
+submitForm.css({"display":"none"});
+
+
+async function getData(url){
+    let response = await fetch(url);
+    return await response.json();
+}
 
 function hideInputs(rooms){
     let singleCheck = $("#Single")
@@ -29,6 +36,7 @@ function setAvailableRooms(freeRooms){
         "tree": 0,
         "villa": 0
     }
+    console.log(freeRooms)
     for (let room of freeRooms){
         if (room.type === "Single"){
             rooms.single++
@@ -49,14 +57,19 @@ function setAvailableRooms(freeRooms){
         `
     )
     hideInputs(rooms)
+    submitForm.css({"display":"block"});
 }
 
 async function updateRoomTypes(){
     let startDate = $("#inDate").val();
     let endDate = $("#outDate").val();
-    let type = $("input[name=type]:checked").val();
-    let url = `http://localhost:3000/reservation/updateAvailabilityInfo?start=${startDate}&end=${endDate}&type=${type}`
-    setAvailableRooms(await appConfig.getData(url))
+    // let type = $("input[name=type]:checked").val();
+    if (startDate.length > 0 && endDate.length > 0){
+        let url = `http://localhost:3000/reservation/updateAvailabilityInfo?start=${startDate}&end=${endDate}`
+        setAvailableRooms(await getData(url))
+    } else {
+        window.alert("Enter dates!");
+    }
 }
 
 $("#updateRoomTypes").on("click", updateRoomTypes);
