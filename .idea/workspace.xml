@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cead3db2-aa77-4d09-98e9-5278813bddc1" name="Default Changelist" comment="commit workspace">
+    <list default="true" id="cead3db2-aa77-4d09-98e9-5278813bddc1" name="Default Changelist" comment="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified">
+      <change afterPath="$PROJECT_DIR$/views/reservation/viewReservations.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/guest.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/guest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/reservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reservation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +50,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/info" />
+      <recent name="$PROJECT_DIR$/views/guest" />
+      <recent name="$PROJECT_DIR$/views/reservation" />
+      <recent name="$PROJECT_DIR$/views/admin" />
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
@@ -76,15 +84,15 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.open" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.open" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cead3db2-aa77-4d09-98e9-5278813bddc1" name="Default Changelist" comment="commit workspace" />
+      <changelist id="cead3db2-aa77-4d09-98e9-5278813bddc1" name="Default Changelist" comment="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified" />
       <created>1619913602129</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -94,7 +102,7 @@
       <workItem from="1620152104616" duration="230000" />
       <workItem from="1620154859188" duration="1369000" />
       <workItem from="1620256059953" duration="1104000" />
-      <workItem from="1620508871253" duration="10016000" />
+      <workItem from="1620525795569" duration="1190000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed Images in room types and redirect root">
       <created>1619915816609</created>
@@ -180,49 +188,7 @@
       <option name="project" value="LOCAL" />
       <updated>1620422404796</updated>
     </task>
-    <task id="LOCAL-00013" summary="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified">
-      <created>1620423562822</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1620423562822</updated>
-    </task>
-    <task id="LOCAL-00014" summary="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified">
-      <created>1620423653777</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1620423653777</updated>
-    </task>
-    <task id="LOCAL-00015" summary="commit workspace">
-      <created>1620436926891</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1620436926891</updated>
-    </task>
-    <task id="LOCAL-00016" summary="commit workspace">
-      <created>1620439600751</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1620439600751</updated>
-    </task>
-    <task id="LOCAL-00017" summary="commit workspace">
-      <created>1620508894310</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1620508894310</updated>
-    </task>
-    <task id="LOCAL-00018" summary="commit workspace">
-      <created>1620525367055</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1620525367055</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +215,6 @@
     <MESSAGE value="Changes reservations" />
     <MESSAGE value="CSS Added" />
     <MESSAGE value="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified" />
-    <MESSAGE value="commit workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified" />
   </component>
 </project>
