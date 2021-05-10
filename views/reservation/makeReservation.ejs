@@ -11,7 +11,7 @@
     <div id = "reservationCenterSection">
         <h1>RESERVATIONS</h1>
 
-        <form id = "reservationForm" method="POST" onsubmit="event.preventDefault();" action="/reservation/makeReservation">
+        <form id = "reservationForm" method="POST" action="/reservation/makeReservation">
             <p>To make a reservation, please fill in the information below, then click "Make Reservation".</p>
             <br>
             First Name:
@@ -45,8 +45,8 @@
             <br>
             <div id="roomsAvailability"></div>
             <div class = "buttonSectionForm">
-            <button form="reservationForm"> Make Reservation </button>
-            <button id="updateRoomTypes"> Check rooms availability </button>
+            <button id="submitForm" form="reservationForm"> Make Reservation </button>
+            <button id="updateRoomTypes" type="button"> Check rooms availability </button>
             </div>
         </form>
 
