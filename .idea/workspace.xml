@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcafc9f3-cd51-49ed-8c45-8dd7a2840c05" name="Default Changelist" comment="Commit time" />
+    <list default="true" id="496a312b-4fb6-4e87-bbc7-2ded2f7cf321" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/script/events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/roomUpdate.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/admin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/admin.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/guest/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/guest/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/guest/profile.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/guest/profile.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/info/contact.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/contact.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/info/diningAndAmenities.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/diningAndAmenities.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/info/events.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/events.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/info/roomTypes.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/roomTypes.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/info/specialDeals.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/specialDeals.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/reservation/makeReservation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/reservation/makeReservation.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/reservation/viewReservations.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/reservation/viewReservations.ejs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +68,7 @@
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.open">
+  <component name="RunManager" selected="npm.start">
     <configuration name="open" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -78,8 +95,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.open" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.open" />
       </list>
     </recent_temporary>
   </component>
@@ -196,21 +213,7 @@
       <option name="project" value="LOCAL" />
       <updated>1620527298494</updated>
     </task>
-    <task id="LOCAL-00015" summary="Commit time">
-      <created>1620629386322</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1620629386322</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Commit time">
-      <created>1620680708336</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1620680708336</updated>
-    </task>
-    <option name="localTasksCounter" value="17" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +241,6 @@
     <MESSAGE value="CSS Added" />
     <MESSAGE value="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified" />
     <MESSAGE value="&quot;Resolved merge conflicts and sorted ejs files in folders&quot;" />
-    <MESSAGE value="Commit time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit time" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Resolved merge conflicts and sorted ejs files in folders&quot;" />
   </component>
 </project>
