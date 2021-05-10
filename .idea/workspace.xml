@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cead3db2-aa77-4d09-98e9-5278813bddc1" name="Default Changelist" comment="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified">
-      <change afterPath="$PROJECT_DIR$/views/reservation/viewReservations.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/guest.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/guest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/appConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/appConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/script/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/script/makeResClient.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/reservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reservation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/info/diningAndAmenities.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/diningAndAmenities.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/reservation/makeReservation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/reservation/makeReservation.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +105,7 @@
       <workItem from="1620152104616" duration="230000" />
       <workItem from="1620154859188" duration="1369000" />
       <workItem from="1620256059953" duration="1104000" />
-      <workItem from="1620525795569" duration="1190000" />
+      <workItem from="1620525795569" duration="10476000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed Images in room types and redirect root">
       <created>1619915816609</created>
@@ -188,7 +191,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620422404796</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="&quot;Resolved merge conflicts and sorted ejs files in folders&quot;">
+      <created>1620527122940</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1620527122940</updated>
+    </task>
+    <task id="LOCAL-00014" summary="&quot;Resolved merge conflicts and sorted ejs files in folders&quot;">
+      <created>1620527298494</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1620527298494</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +232,7 @@
     <MESSAGE value="Changes reservations" />
     <MESSAGE value="CSS Added" />
     <MESSAGE value="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified" />
+    <MESSAGE value="&quot;Resolved merge conflicts and sorted ejs files in folders&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Resolved merge conflicts and sorted ejs files in folders&quot;" />
   </component>
 </project>

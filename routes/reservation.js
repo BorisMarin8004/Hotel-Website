@@ -1,30 +1,30 @@
 const router = require('express').Router();
 const db = require("../functions/db")
 
+async function getFreeRooms (startDate, endDate){
+    console.log(startDate, endDate)
+    let sql = `SELECT rooms.roomId, type, price FROM rooms INNER JOIN reservations
+           WHERE (startDate <= ${startDate} AND endDate <= ${endDate}) 
+           OR (startDate >= ${startDate} AND endDate >= ${endDate})`
+    return await db.executeSQL(sql)
+}
+
 //Reservation GET Route: load reservations page
 router.get("/makeReservation", async (req, res) => {
     let sql = `SELECT firstName, lastName, cardInfo FROM guests WHERE guestId=${req.session.guestId}`
     let guestData = (await db.executeSQL(sql))[0]
-
-
-    let startDate = req.query.start
-    let endDate = req.query.end
-    let roomType = req.query.type
-    let freeRooms = "No date data"
-
-    if (typeof startDate !== 'undefined' && typeof startDate !== 'undefined' && typeof startDate !== 'undefined'){
-        sql = `SELECT rooms.roomId, type, price FROM rooms INNER JOIN reservations ON roomId.reservations=roomId.rooms
-           WHERE (startDate <= ${startDate} AND endDate <= ${endDate}) 
-           OR (startDate >= ${startDate} AND endDate >= ${endDate})`
-        let freeRooms = (await db.executeSQL(sql))[0]
-        console.log(startDate, endDate)
-    }
-
-    res.render("./reservation/makeReservation", {guestData, freeRooms});
+    res.render("./reservation/makeReservation", {guestData});
 });
 
 router.get("/updateAvailabilityInfo", async (req, res) => {
+    let startDate = req.query.start
+    let endDate = req.query.end
+    let freeRooms = "No date data"
 
+    if (typeof startDate !== 'undefined' && typeof startDate !== 'undefined' && typeof startDate !== 'undefined'){
+        freeRooms = await getFreeRooms(startDate, endDate)
+    }
+    res.send(freeRooms)
 })
 
 // Reservation POST Route: get form data and insert into DB
@@ -35,10 +35,14 @@ router.post("/makeReservation", async (req, res) => {
     let outDate = req.body.outDate
     let roomType = req.body.type
     // Insert info into reservation db
-    // let sql = "INSERT INTO reservations (startDate, endDate) VALUES (?, ?);"
-    // let params = [inDate, outDate];
-    // let rows = await db.executeSQL(sql, params);
-    res.render("./reservation/makeReservation", {"message": "Reservation made!(Not actually)"});
+
+    let rooms = getFreeRooms()
+
+    console.log({"guestId": req.session.guestId, "RoomType": roomType})
+    let sql = "INSERT INTO reservations (startDate, endDate) VALUES (?, ?);"
+    let params = [inDate, outDate];
+    let rows = await db.executeSQL(sql, params);
+    res.redirect("/reservation/makeReservation");
 });
 
 router.get("/viewReservations", async function(req, res){
