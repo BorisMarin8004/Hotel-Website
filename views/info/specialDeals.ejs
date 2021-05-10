@@ -4,23 +4,26 @@
 </head>
 <body>
 
-<h1>Special Deals!</h1>
+<div id = "dealsSection">
 
-<%-include ('../partials/nav.ejs')%>
+    <%-include ('../partials/nav.ejs')%>
+    <div id = "dealsCenterSection">
+        <h1>Special Deals!</h1>
 
-<div id="Deals">
-    <p>
-        Book two Double rooms and get 3 free meals per day!
-    </p><br>
-    <p>
-        Book two Villas and all guests can join the kayaking event for free!
-    </p><br>
-    <p>
-        Book three of any type of room and join the nature exploration event for free!
-    </p>
+        <div id="dealsText">
+            <p>
+                Book two Double rooms and get 3 free meals per day!
+            </p><br>
+            <p>
+                Book two Villas and all guests can join the kayaking event for free!
+            </p><br>
+            <p>
+                Book three of any type of room and join the nature exploration event for free!
+            </p>
 
+        </div>
+    </div>
 </div>
-
 <%-include ('../partials/footer.ejs')%> <!--footer.ejs Was nav.ejs-->
 
 </body>

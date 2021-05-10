@@ -12,20 +12,22 @@
 
     <div id = "roomTypesCenterSection">
         <h1>AVAILABLE ROOMS WE OFFER:</h1>
-
-    <% for (room of rooms) { %>
+        <div id = "roomTypesScroll">
+            <% for (room of rooms) { %>
             <div class = "roomInfoAndImage">
-            <p>
-            Room Number: <%=room.roomId%><br>
-            Type: <%=room.type%><br>
-            Price: <%=room.price%><br>
-            Description: <%=room.description%>
-            </p>
-            <img class="roomImage" src="/images/<%=room.image%>">
+                <p>
+                    Room Number: <%=room.roomId%><br>
+                    Type: <%=room.type%><br>
+                    Price: <%=room.price%><br>
+                    Description: <%=room.description%>
+                </p>
+                <img class="roomImage" src="/images/<%=room.image%>">
             </div>
             <br>
-    <% } %>
+            <% } %>
+        </div>
     </div>
 </div>
+<%-include ('../partials/footer.ejs')%>
 </body>
 </html>

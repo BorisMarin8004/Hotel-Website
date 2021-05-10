@@ -1,0 +1,28 @@
+<%-include ('partials/header.ejs')%>
+
+<title>Room Update</title>
+</head>
+<body>
+<h1> Update Author </h1>
+
+<form action="/" class = "formStyled">
+    <button>Return to Home</button>
+</form>
+
+<form method="POST" action="/room/update">
+    Room Type:
+    <input type="text" name="type" value="<%=room.type%>"><br>
+    Room Price:
+    <input type="text" name="price" value="<%=room.price%>"><br>
+    Room Image:
+    <input type="text" name="image" value="<%=room.image%>"><br>
+    Room Description:
+    <input type="text" name="descript" value="<%=room.description%>"><br>
+
+    <input type="hidden" name="roomId" value="<%=room.roomId%>">
+
+    <button>Update Room</button>
+</form>
+
+</body>
+</html>

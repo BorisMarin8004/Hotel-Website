@@ -19,33 +19,38 @@
                     <% if (typeof table != "undefined") {%>
                         <% if (keyWord === "guests") { %>
                             <% for (row of table){ %>
-                            <p class = "record">
-                                <%="Id: " +  row.guestId%><br>
-                                <%="Firstname: " + row.firstName%><br>
-                                <%="Lastname: " + row.lastName%><br>
-                                <%="Username: " +  row.username%><br>
-                                <%="Password: " +  row.password%><br>
-                            </p>
+
+                                <p class = "record">
+                                    <%="Id: " +  row.guestId%><br>
+                                    <%="Firstname: " + row.firstName%><br>
+                                    <%="Lastname: " + row.lastName%><br>
+                                    <%="Username: " +  row.username%><br>
+                                    <%="Password: " +  row.password%><br>
+                                </p>
                             <% } %>
                         <% } else if (keyWord === "rooms") { %>
                             <% for (row of table){ %>
-                            <p class = "record">
-                                <%="Id: " +  row.roomId%><br>
-                                <%="Type: " + row.type%><br>
-                                <%="Price: " + row.price%><br>
-                                <%="Image: " +  row.image%><br>
-                                <%="Description: " +  row.description%><br>
-                            </p>
+                                <div class = recordSection>
+                                <p class = "record">
+                                    <%="Id: " +  row.roomId%><br>
+                                    <%="Type: " + row.type%><br>
+                                    <%="Price: " + row.price%><br>
+                                    <%="Image: " +  row.image%><br>
+                                    <%="Description: " +  row.description%><br>
+                                </p>
+                                </div>
                             <% } %>
                         <% } else { %>
                             <% for (row of table){ %>
-                            <p class = "record">
-                                <%="Id: " +  row.resId%><br>
-                                <%="RoomId: " + row.roomId%><br>
-                                <%="GuestId: " + row.guestId%><br>
-                                <%="Start Date: " +  row.startDate%><br>
-                                <%="End Date: " +  row.endDate%><br>
-                            </p>
+                                <div class = recordSection>
+                                <p class = "record">
+                                    <%="Id: " +  row.resId%><br>
+                                    <%="RoomId: " + row.roomId%><br>
+                                    <%="GuestId: " + row.guestId%><br>
+                                    <%="Start Date: " +  row.startDate%><br>
+                                    <%="End Date: " +  row.endDate%><br>
+                                </p>
+                                </div>
                             <% } %>
                         <% } %>
                     <% } else { %>

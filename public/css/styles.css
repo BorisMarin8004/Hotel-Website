@@ -55,7 +55,7 @@ input, button{
     margin: 10px;
 }
 
-form{
+.formStyled{
     background-color: white;
     border: darkblue solid 3px;
     width: 400px;
@@ -86,6 +86,11 @@ form{
     background-image: url("/images/backgroundLogin.jpg");
 }
 
+.recordSection{
+    display: flex;
+    justify-content: center;
+}
+
 .record{
     background-color: white;
     border: darkblue solid 3px;
@@ -103,16 +108,22 @@ form{
     background-image: url("/images/backgroundRoomTypes.jpg");
 }
 
+#viewRoomsSection{
+    background-image: url("/images/backgroundRoomTypes.jpg");
+}
+
 .roomInfoAndImage{
     display: flex;
+    justify-content: center;
     text-align: left;
     border: darkblue solid 3px;
     background-color: white;
+    padding: 10px;
 }
 
 .roomImage{
-    width: 200px;
-    heght: 200px;
+    height: 220px;
+    width: 220px;
 }
 
 #reservationSection{
@@ -127,16 +138,16 @@ form{
     background-image: url("/images/backgroundDiningAmenities.jpg");
 }
 
-.diningAmenities, #eventText, #contactText{
+.diningAmenities, #eventText, #contactText, #dealsText{
     background-color: white;
     border: darkblue solid 3px;
     text-align: left;
     padding: 10px;
 }
 
-#toScroll {
+#toScroll, #reservationForm, #scrollViewReservations, #roomTypesScroll, #tableRecords {
     overflow-y:auto;
-    height: 40%;
+    height: 70%;
     position:relative;
 }
 
@@ -152,8 +163,13 @@ form{
     background-image: url("/images/backgroundContact.jpg");
 }
 
+#dealsSection{
+    background-image: url("/images/backgroundEvents.jpg");
+}
+
 #adminSection, #homeSection, #roomTypesSection, #reservationSection,
-#editProfileSection, #diningAmenitiesSection, #eventsSection, #contactSection{
+#editProfileSection, #diningAmenitiesSection, #eventsSection, #contactSection,
+#viewRoomsSection, #dealsSection{
     display: flex;
     justify-content: center;
     height: 100%;
@@ -165,7 +181,7 @@ form{
 
 #homeCenterSection, #reservationCenterSection, #roomTypesCenterSection,
 #editProfileCenterSection, #diningAmenitiesCenterSection, #eventsCenterSection,
-#contactCenterSection, #adminCenterSection{
+#contactCenterSection, #adminCenterSection, #viewRoomsCenterSection, #dealsCenterSection{
     text-align:center;
     padding: 20px 50px;
 }
