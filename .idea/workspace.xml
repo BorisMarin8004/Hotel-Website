@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dcafc9f3-cd51-49ed-8c45-8dd7a2840c05" name="Default Changelist" comment="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified">
-      <change afterPath="$PROJECT_DIR$/public/script/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/admin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/admin.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/info/contact.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/contact.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/info/diningAndAmenities.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/diningAndAmenities.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/info/events.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/events.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/info/roomTypes.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/roomTypes.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/info/specialDeals.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/specialDeals.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/reservation/makeReservation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/reservation/makeReservation.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/reservation/viewReservations.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/reservation/viewReservations.ejs" afterDir="false" />
-    </list>
+    <list default="true" id="dcafc9f3-cd51-49ed-8c45-8dd7a2840c05" name="Default Changelist" comment="Commit time" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -208,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620527298494</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Commit time">
+      <created>1620629386322</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1620629386322</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +231,7 @@
     <MESSAGE value="CSS Added" />
     <MESSAGE value="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified" />
     <MESSAGE value="&quot;Resolved merge conflicts and sorted ejs files in folders&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Resolved merge conflicts and sorted ejs files in folders&quot;" />
+    <MESSAGE value="Commit time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit time" />
   </component>
 </project>
