@@ -2,13 +2,14 @@ const router = require('express').Router();
 const appConfig = require('../functions/appConfig')
 const db = require("../functions/db")
 
+// Display Login Form
 router.get('/login', (req, res) => {
-    // console.log(req.route.path)
     req.session.authenticated = false
     req.session.guestId = null
     res.render("./guest/login");
 });
 
+// Display Edit Profile Form
 router.get('/update', async (req, res) => {
     let guestId = req.session.guestId;
     let sql = `SELECT guestId, firstName, lastName, cardInfo FROM guests where guestId=${guestId}`;
@@ -17,6 +18,7 @@ router.get('/update', async (req, res) => {
     res.render("./guest/profile", {"user":rows[0]});
 });
 
+// Submit Login info
 router.post('/login', async (req, res) => {
     let username = req.body.username;
     let password = req.body.password;
@@ -32,18 +34,10 @@ router.post('/login', async (req, res) => {
     let params = [username];
     let rows = await db.executeSQL(sql, params);
 
-    // console.log(rows);
-
     if (rows.length > 0){
        if (password === rows[0].password){
-        // appConfig.setAuth(req, true)
-        // let sql = "SELECT guestId FROM guests WHERE password = ?";
-        // let params = [password];
-        // let data = await db.executeSQL(sql, params);
-
         req.session.authenticated = true
         req.session.guestId = rows[0].guestId;
-        // console.log({"LogIn": req.session})
         res.render("index");
         } else {
             res.render("./guest/login", {"error":error});
@@ -56,6 +50,7 @@ router.post('/login', async (req, res) => {
     
 });
 
+// Submit new account info
 router.post('/create', async (req, res) => {
     let fName = req.body.fName;
     let lName = req.body.lName;
@@ -80,6 +75,7 @@ router.post('/create', async (req, res) => {
     }
 });
 
+// Submit edited profile info
 router.post('/update', async (req, res) => {
     let guestId = req.body.guestId;
     let firstName = req.body.firstName;
