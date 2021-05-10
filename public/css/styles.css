@@ -139,6 +139,12 @@ input, button{
     padding: 10px;
 }
 
+#toScroll {
+    overflow-y:auto;
+    height: 40%;
+    position:relative;
+}
+
 .diningAmenitiesImg{
     text-align: center;
 }

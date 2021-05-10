@@ -20,6 +20,11 @@ app.use(cookieSession({
 const adminUsername = "admin"
 const adminPassword = "admin"
 
+async function getData(url){
+    let response = await fetch(url);
+    return await response.json();
+}
+
 app.use((req, res, next) => {
     console.log({"Session": req.session, "Path" : req.path, "Reg" : req.session.regenerate})
     if(!req.session.authenticated && req.path !== "/guest/login" && req.path !== "/guest/create"){
@@ -29,4 +34,4 @@ app.use((req, res, next) => {
     }
 })
 
-module.exports = {app, adminUsername, adminPassword}
+module.exports = {app, adminUsername, adminPassword, getData}

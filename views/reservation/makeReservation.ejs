@@ -11,7 +11,7 @@
     <div id = "reservationCenterSection">
         <h1>RESERVATIONS</h1>
 
-        <form id = "reservationForm" method="POST" action="reservation/makeReservation" class = "formStyled">
+        <form id = "reservationForm" method="POST" onsubmit="event.preventDefault();" action="/reservation/makeReservation">
             <p>To make a reservation, please fill in the information below, then click "Make Reservation".</p>
             <br>
             First Name:
@@ -22,27 +22,31 @@
             <input type="text" name="creditCard" value="<%=guestData.cardInfo%>"><br>
             Check-In Date:
             <input type="date" max="01/01/2022"
+               id="inDate"
                required pattern="\d{4}-\d{2}-\d{2}"
                placeholder="YYYY-MM-DD"
                name="inDate" ><br>
             Check-Out Date:
             <input type="date" max="01/01/2022"
+               id="outDate"
                required pattern="\d{4}-\d{2}-\d{2}"
                placeholder="YYYY-MM-DD"
                name="outDate"><br>
             Room Type:
-            <% if (freeRooms.single) {%>
-                <input type="radio" name="type" value="oneBed"> 1 Bedroom
-            <% } if (freeRooms.double) { %>
-                <input type="radio" name="type" value="twoBed"> 2 Bedroom
-            <% } if (freeRooms.three) { %>
-                <input type="radio" name="type" value="threeBed"> 3 Bedroom
-            <% } if (freeRooms.villa) { %>
-                <input type="radio" name="type" value="twoBed"> Villa
-            <% } %>
+<!--            % if (typeof startDate !== 'undefined' && freeRooms.single) {%-->
+                <input id="Single" type="radio" name="type" value="Single"> 1 Bedroom
+<!--            % } if (typeof startDate !== 'undefined' && freeRooms.double) { %-->
+                <input id="Double" type="radio" name="type" value="Double"> 2 Bedroom
+<!--            % } if (typeof startDate !== 'undefined' && freeRooms.three) { %-->
+                <input id="Tree" type="radio" name="type" value="Tree"> 3 Bedroom
+<!--            % } if (typeof startDate !== 'undefined' && freeRooms.villa) { %-->
+                <input id="Villa" type="radio" name="type" value="Villa"> Villa
+<!--            % } %-->
             <br>
+            <div id="roomsAvailability"></div>
             <div class = "buttonSectionForm">
-            <button> Make Reservation </button>
+            <button form="reservationForm"> Make Reservation </button>
+            <button id="updateRoomTypes"> Check rooms availability </button>
             </div>
         </form>
 
@@ -52,7 +56,6 @@
     </div>
 </div>
 
-<%-include ('../partials/footer.ejs')%>
-
+<script src="../script/makeResClient.js"></script>
 </body>
 </html>
