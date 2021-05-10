@@ -1,33 +1,37 @@
 <%-include ('../partials/header.ejs')%>
 
 </head>
-<body class ="stretchedInterface">
+<body class>
     <!-- Feel free to pretty up the layout as needed, just wanted to get the functionality going -->
 
-    <div id = "roomTypesSection">
+    <div id = "viewRoomsSection">
         <%-include ('../partials/nav.ejs')%>
-        <div id = "roomTypesCenterSection">
+        <div id = "viewRoomsCenterSection">
             <h1>YOUR RESERVATIONS:</h1>
-        <% for (reservation of reservations) {%>
-            <div class = "roomInfoAndImage">
-                <p>
-                Room Number: <%=reservation.roomId%><br>
-                Type: <%=reservation.type%><br>
-                Price: <%=reservation.price%><br>
-                Description: <%=reservation.description%><br>
-                Start Date: <%=reservation.startDate%><br>
-                End Date: <%=reservation.endDate%>
-                </p>
-                <img class="roomImage" src="/images/<%=reservation.image%>">
-                <form action="/reservation/viewReservations" method="POST" class = "formStyled">
-                    <input type="hidden" value="<%=reservation.resId%>" name="resId">
-                    <button>Cancel Reservation</button>
-                </form>
+            <div id = scrollViewReservations>
+                <% for (reservation of reservations) {%>
+                <div class = "roomInfoAndImage">
+                    <form action="/reservation/viewReservations" method="POST">
+                        <input type="hidden" value="<%=reservation.resId%>" name="resId">
+                        <button>Cancel Reservation</button>
+                    </form>
+                    <p>
+                        Room Number: <%=reservation.roomId%><br>
+                        Type: <%=reservation.type%><br>
+                        Price: <%=reservation.price%><br>
+                        Description: <%=reservation.description%><br>
+                        Start Date: <%=reservation.startDate%><br>
+                        End Date: <%=reservation.endDate%>
+                    </p>
+                    <img class="roomImage" src="/images/<%=reservation.image%>">
+                </div>
+                <br>
+                <% } %>
             </div>
-            <br>
-        <% } %>
+
         </div>
 
     </div>
+    <%-include ('../partials/footer.ejs')%>
 </body>
 </html>

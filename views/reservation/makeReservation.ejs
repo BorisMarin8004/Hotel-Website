@@ -11,7 +11,7 @@
     <div id = "reservationCenterSection">
         <h1>RESERVATIONS</h1>
 
-        <form id = "reservationForm" method="POST" onsubmit="event.preventDefault();" action="/reservation/makeReservation">
+        <form id = "reservationForm" method="POST" onsubmit="event.preventDefault();" action="/reservation/makeReservation" class = "formStyled" >
             <p>To make a reservation, please fill in the information below, then click "Make Reservation".</p>
             <br>
             First Name:
@@ -55,7 +55,7 @@
         <% } %>
     </div>
 </div>
-
+<%-include ('../partials/footer.ejs')%>
 <script src="../script/makeResClient.js"></script>
 </body>
 </html>

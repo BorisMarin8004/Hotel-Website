@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cead3db2-aa77-4d09-98e9-5278813bddc1" name="Default Changelist" comment="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified">
+    <list default="true" id="dcafc9f3-cd51-49ed-8c45-8dd7a2840c05" name="Default Changelist" comment="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified">
+      <change afterPath="$PROJECT_DIR$/public/script/events.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/appConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/appConfig.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/script/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/script/makeResClient.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/reservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reservation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/admin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/admin.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/info/contact.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/contact.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/info/diningAndAmenities.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/diningAndAmenities.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/info/events.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/events.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/info/roomTypes.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/roomTypes.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/info/specialDeals.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/info/specialDeals.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/reservation/makeReservation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/reservation/makeReservation.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/reservation/viewReservations.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/reservation/viewReservations.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +63,7 @@
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.open">
     <configuration name="open" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -87,8 +90,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.open" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>

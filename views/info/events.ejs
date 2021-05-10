@@ -1,6 +1,6 @@
 <%-include ('../partials/header.ejs')%>
 
-    <title>Home Page</title>
+<title>Home Page</title>
 </head>
 <body>
 
@@ -13,16 +13,21 @@
             <p>
                 5/15/21: Group hike through Big Sur starting at 10:00am. Bring sunscreen and good hiking shoes! -Free
             </p><br>
+            <button id = "#hikeSearch">View Hiking</button>
+            <div id="#hikeImage"></div><br>
             <p>
                 5/21/21: Ocean kayaking starting at 12:00pm. Meet in lobby. -$50
             </p><br>
+            <div id="#kayakImage"></div>
             <p>
                 5/30/21: Nature exploration with a botanist. Meet in lobby at 2:00pm. -$30
             </p>
+            <div id="#natureImage"></div>
         </div>
     </div>
 </div>
-<%-include ('../partials/footer.ejs')%> <!--footer.ejs Was nav.ejs-->
+<%-include ('../partials/footer.ejs')%>
 
+<script src = "../script/events.js"></script>
 </body>
 </html>
