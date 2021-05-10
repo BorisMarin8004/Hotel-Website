@@ -145,7 +145,7 @@ input, button{
     padding: 10px;
 }
 
-#toScroll, #reservationForm, #scrollViewReservations, #roomTypesScroll, #tableRecords {
+#toScroll, #reservationForm, #scrollViewReservations, #roomTypesScroll, #tableRecords, #eventText {
     overflow-y:auto;
     height: 70%;
     position:relative;
@@ -158,6 +158,7 @@ input, button{
 #eventsSection{
     background-image: url("/images/backgroundEvents.jpg");
 }
+
 
 #contactSection{
     background-image: url("/images/backgroundContact.jpg");
