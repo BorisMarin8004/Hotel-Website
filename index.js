@@ -13,7 +13,7 @@ app.use('/info', infoRouter);
 app.use('/reservation', reservationRouter);
 
 app.get('/', (req, res) => {
-    res.redirect("/info/")
+    res.redirect("/guest/login")
 })
 
 app.listen(3000, () => {
