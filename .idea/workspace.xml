@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="496a312b-4fb6-4e87-bbc7-2ded2f7cf321" name="Default Changelist" comment="&quot;Resolved merge conflicts and sorted ejs files in folders&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="496a312b-4fb6-4e87-bbc7-2ded2f7cf321" name="Default Changelist" comment="&quot;Resolved merge conflicts and sorted ejs files in folders&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +51,7 @@
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.open">
+  <component name="RunManager" selected="npm.start">
     <configuration name="open" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -80,8 +78,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.open" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.open" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620683322506</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="&quot;Resolved merge conflicts and sorted ejs files in folders&quot;">
+      <created>1620692848093</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1620692848093</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
