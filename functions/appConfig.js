@@ -12,7 +12,7 @@ app.use(cookieSession({
     secret: 'secret',
     saveUninitialized: false,
     resave: false,
-    expire: new Date(Date.now() + (30 * 1000)),
+    maxAge: 2*60*60*1000,
     guestId: null,
     authenticated: false
 }));
