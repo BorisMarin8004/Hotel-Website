@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="496a312b-4fb6-4e87-bbc7-2ded2f7cf321" name="Default Changelist" comment="&quot;Resolved merge conflicts and sorted ejs files in folders&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/reservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/reservation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/reservation/makeReservation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/reservation/makeReservation.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/appConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/appConfig.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620681480984</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fixed sessions">
+      <created>1620694290513</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1620694290513</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +248,7 @@
     <MESSAGE value="CSS Added" />
     <MESSAGE value="CSS Enhanced&#10;Background Images added&#10;Google fonts added&#10;.ejs files modified" />
     <MESSAGE value="&quot;Resolved merge conflicts and sorted ejs files in folders&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Resolved merge conflicts and sorted ejs files in folders&quot;" />
+    <MESSAGE value="Fixed sessions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed sessions" />
   </component>
 </project>

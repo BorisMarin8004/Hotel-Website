@@ -18,7 +18,7 @@ app.use(cookieSession({
 }));
 
 const adminUsername = "admin"
-const adminPassword = "admin"
+const adminPassword = "secret"
 
 async function getData(url){
     let response = await fetch(url);
