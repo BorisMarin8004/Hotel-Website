@@ -20,8 +20,8 @@
                         Type: <%=reservation.type%><br>
                         Price: <%=reservation.price%><br>
                         Description: <%=reservation.description%><br>
-                        Start Date: <%=reservation.startDate%><br>
-                        End Date: <%=reservation.endDate%>
+                        Start Date: <%=reservation.startDate.toISOString().slice(0, 10)%><br>
+                        End Date: <%=reservation.endDate.toISOString().slice(0, 10)%>
                     </p>
                     <img class="roomImage" src="/images/<%=reservation.image%>">
                 </div>
