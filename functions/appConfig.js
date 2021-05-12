@@ -12,13 +12,13 @@ app.use(cookieSession({
     secret: 'secret',
     saveUninitialized: false,
     resave: false,
-    expire: new Date(Date.now() + (30 * 1000)),
+    maxAge: 2*60*60*1000,
     guestId: null,
     authenticated: false
 }));
 
 const adminUsername = "admin"
-const adminPassword = "admin"
+const adminPassword = "secret"
 
 async function getData(url){
     let response = await fetch(url);

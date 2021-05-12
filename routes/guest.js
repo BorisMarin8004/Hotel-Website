@@ -18,6 +18,10 @@ router.get('/update', async (req, res) => {
     res.render("./guest/profile", {"user":rows[0]});
 });
 
+router.get("/create", (req, res) =>{
+    res.redirect("/guest/login")
+});
+
 // Submit Login info
 router.post('/login', async (req, res) => {
     let username = req.body.username;
