@@ -2,9 +2,9 @@ const router = require('express').Router();
 const db = require("../functions/db")
 
 async function getFreeRooms (startDate, endDate){
-    console.log(startDate, endDate)
+    console.log(new Date(startDate), endDate)
     let sql = `SELECT DISTINCT rooms.roomId, type, price FROM rooms LEFT JOIN reservations ON reservations.roomId=rooms.roomId
-           WHERE (startDate < ${startDate} AND endDate < ${endDate}) OR (startDate > ${startDate} AND endDate > ${endDate}) OR (startDate IS NULL AND endDate IS NULL)`
+           AND ((startDate > ${startDate} AND startDate > ${endDate}) OR (endDate < ${startDate} AND endDate < ${endDate}) OR (startDate IS NULL AND endDate IS NULL))`
     return await db.executeSQL(sql)
 }
 
